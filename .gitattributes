@@ -1,0 +1,4 @@
+# Preserve measured evidence and artifact hashes byte-for-byte across Windows/Linux.
+* -text
+*.sh text eol=lf
+*.png binary

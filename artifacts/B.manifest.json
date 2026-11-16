@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "model_id": "simulated-B",
+  "artifact_uri": ".",
+  "kind": "fixture",
+  "file_hashes": {
+    "B.json": "84e47bcc54781c20eb7f397a62bfba1f105edd731d8518f440ae54a4861be681"
+  },
+  "model_sha256": "c61e8861890828f7c4592ad696c4a6a66ed49e021711fa914f9da2fc9ef3e23c",
+  "runtime": {
+    "backend_mode": "simulated",
+    "generation": {
+      "stream": "ndjson",
+      "max_chunks": 40
+    },
+    "source": "hw8-9-10-release-contracts"
+  },
+  "runtime_sha256": "6bda1d19b89b89ec0bb1f71551ee2fc6686feecff6c317d284bd9700a993cc0b"
+}

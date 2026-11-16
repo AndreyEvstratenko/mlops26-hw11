@@ -1,0 +1,12 @@
+.venv
+results
+evidence
+__pycache__
+*.zip
+vendor
+reference
+
+.tools
+.runtime
+.git
+archive
