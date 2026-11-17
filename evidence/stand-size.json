@@ -1,0 +1,8 @@
+{
+  "node_rootfs_bytes": 1060409344,
+  "node_writable_bytes": 3465216,
+  "node_var_volume_bytes": 2717392896,
+  "host_application_image_bytes": 216276905,
+  "logical_total_bytes": 3994079145,
+  "limitation": "Logical footprint, including image layers that may be shared. Docker VHDX includes other projects and free blocks; this is not an exact reclaimable-size estimate. Build cache and local Python/tools are separate."
+}

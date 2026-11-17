@@ -1,0 +1,8 @@
+{
+  "epoch": 1794863807.1474123,
+  "service": "api-control-1",
+  "keep_alive": false,
+  "backend_mode": "simulated",
+  "cache_start": "empty after Pod replacement; backend warm; 2+2 affinity selected by /state probes",
+  "attempts_per_request": 1
+}

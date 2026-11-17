@@ -1,0 +1,1 @@
+{"name": "balanced ClientIP control completes without overload", "passed": true, "details": {"distribution": {"api-5975dc6d94-nfdjv": 360, "api-5975dc6d94-r9kkh": 360}, "selection_attempts": 1, "selected_service": "api-control-1", "limitation": "Deliberately conditioned initial mapping, not evidence that ClientIP generally balances clients."}, "wall": 1794863927.2838988}

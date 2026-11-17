@@ -1,0 +1,45 @@
+{
+  "method": "Conditional control, not a blind random repetition. Select 2+2 client mapping via temporary Services with identical ClientIP settings. /state does not warm prefix cache.",
+  "attempts": [
+    {
+      "service": {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "name": "api-control-1",
+          "labels": {
+            "lab-control": "balanced-affinity"
+          }
+        },
+        "spec": {
+          "selector": {
+            "app": "api"
+          },
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "targetPort": "http"
+            }
+          ],
+          "sessionAffinity": "ClientIP",
+          "sessionAffinityConfig": {
+            "clientIP": {
+              "timeoutSeconds": 10800
+            }
+          }
+        }
+      },
+      "mapping": {
+        "client-0": "api-5975dc6d94-nfdjv",
+        "client-1": "api-5975dc6d94-r9kkh",
+        "client-2": "api-5975dc6d94-r9kkh",
+        "client-3": "api-5975dc6d94-nfdjv"
+      },
+      "counts": {
+        "api-5975dc6d94-nfdjv": 2,
+        "api-5975dc6d94-r9kkh": 2
+      }
+    }
+  ]
+}

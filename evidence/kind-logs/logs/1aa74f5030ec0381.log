@@ -1,0 +1,129 @@
+2026-11-16T20:03:19.789788803Z stderr F I1116 20:03:19.789604       1 main.go:390] probe TCP address mlops-andrey11-control-plane:6443
+2026-11-16T20:03:19.790565656Z stderr F I1116 20:03:19.790457       1 main.go:109] connected to apiserver: https://mlops-andrey11-control-plane:6443
+2026-11-16T20:03:19.790787322Z stderr F I1116 20:03:19.790639       1 main.go:139] hostIP = 172.19.0.2
+2026-11-16T20:03:19.790793664Z stderr F podIP = 172.19.0.2
+2026-11-16T20:03:19.790795493Z stderr F I1116 20:03:19.790695       1 main.go:148] setting mtu 1500 for CNI 
+2026-11-16T20:03:19.790796545Z stderr F I1116 20:03:19.790701       1 main.go:178] kindnetd IP family: "ipv4"
+2026-11-16T20:03:19.790797793Z stderr F I1116 20:03:19.790716       1 main.go:182] noMask IPv4 subnets: [10.244.0.0/16]
+2026-11-16T20:03:20.085836847Z stderr F I1116 20:03:20.085544       1 controller.go:361] Starting controller kube-network-policies
+2026-11-16T20:03:20.085861231Z stderr F I1116 20:03:20.085580       1 controller.go:365] Waiting for informer caches to sync
+2026-11-16T20:03:20.085863774Z stderr F I1116 20:03:20.085584       1 shared_informer.go:313] Waiting for caches to sync for kube-network-policies
+2026-11-16T20:03:20.285802086Z stderr F I1116 20:03:20.285609       1 shared_informer.go:320] Caches are synced for kube-network-policies
+2026-11-16T20:03:20.285823841Z stderr F I1116 20:03:20.285633       1 metrics.go:61] Registering metrics
+2026-11-16T20:03:20.285826234Z stderr F I1116 20:03:20.285681       1 controller.go:401] Syncing nftables rules
+2026-11-16T20:03:20.476178034Z stderr F I1116 20:03:20.475993       1 controller.go:802] error syncing nftables rules /dev/stdin:14:72-76: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476200662Z stderr F add rule inet kindnet-network-policies postrouting ip saddr @podips-v4 queue num 101 bypass comment "process IPv4 traffic with network policy enforcement"
+2026-11-16T20:03:20.476203728Z stderr F                                                                        ^^^^^
+2026-11-16T20:03:20.476205226Z stderr F /dev/stdin:15:72-76: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.47620683Z stderr F add rule inet kindnet-network-policies postrouting ip daddr @podips-v4 queue num 101 bypass comment "process IPv4 traffic with network policy enforcement"
+2026-11-16T20:03:20.476208732Z stderr F                                                                        ^^^^^
+2026-11-16T20:03:20.476210112Z stderr F /dev/stdin:16:73-77: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.47621152Z stderr F add rule inet kindnet-network-policies postrouting ip6 saddr @podips-v6 queue num 101 bypass comment "process IPv6 traffic with network policy enforcement"
+2026-11-16T20:03:20.476212918Z stderr F                                                                         ^^^^^
+2026-11-16T20:03:20.476214299Z stderr F /dev/stdin:17:73-77: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476215591Z stderr F add rule inet kindnet-network-policies postrouting ip6 daddr @podips-v6 queue num 101 bypass comment "process IPv6 traffic with network policy enforcement"
+2026-11-16T20:03:20.476216945Z stderr F                                                                         ^^^^^
+2026-11-16T20:03:20.476218343Z stderr F /dev/stdin:20:84-88: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476225777Z stderr F add rule inet kindnet-network-policies prerouting ip saddr @podips-v4 udp dport 53 queue num 101 bypass comment "process IPv4 traffic destined to a DNS server with network policy enforcement"
+2026-11-16T20:03:20.47622775Z stderr F                                                                                    ^^^^^
+2026-11-16T20:03:20.476229146Z stderr F /dev/stdin:21:84-88: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476231084Z stderr F add rule inet kindnet-network-policies prerouting ip daddr @podips-v4 udp dport 53 queue num 101 bypass comment "process IPv4 traffic destined to a DNS server with network policy enforcement"
+2026-11-16T20:03:20.476244345Z stderr F                                                                                    ^^^^^
+2026-11-16T20:03:20.476246087Z stderr F /dev/stdin:22:85-89: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476247665Z stderr F add rule inet kindnet-network-policies prerouting ip6 saddr @podips-v6 udp dport 53 queue num 101 bypass comment "process IPv6 traffic destined to a DNS server with network policy enforcement"
+2026-11-16T20:03:20.476249211Z stderr F                                                                                     ^^^^^
+2026-11-16T20:03:20.476250617Z stderr F /dev/stdin:23:85-89: Error: Could not process rule: No such file or directory
+2026-11-16T20:03:20.476252138Z stderr F add rule inet kindnet-network-policies prerouting ip6 daddr @podips-v6 udp dport 53 queue num 101 bypass comment "process IPv6 traffic destined to a DNS server with network policy enforcement"
+2026-11-16T20:03:20.476253662Z stderr F                                                                                     ^^^^^
+2026-11-16T20:03:30.085268808Z stderr F I1116 20:03:30.084822       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:03:30.08529481Z stderr F I1116 20:03:30.085023       1 main.go:301] handling current node
+2026-11-16T20:03:40.089252574Z stderr F I1116 20:03:40.088904       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:03:40.089281257Z stderr F I1116 20:03:40.089011       1 main.go:301] handling current node
+2026-11-16T20:03:50.093801101Z stderr F I1116 20:03:50.093243       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:03:50.09383861Z stderr F I1116 20:03:50.093356       1 main.go:301] handling current node
+2026-11-16T20:04:00.091304779Z stderr F I1116 20:04:00.091069       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:00.091327959Z stderr F I1116 20:04:00.091149       1 main.go:301] handling current node
+2026-11-16T20:04:10.087198989Z stderr F I1116 20:04:10.086999       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:10.087222291Z stderr F I1116 20:04:10.087036       1 main.go:301] handling current node
+2026-11-16T20:04:20.082132448Z stderr F I1116 20:04:20.081861       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:20.082159016Z stderr F I1116 20:04:20.081929       1 main.go:301] handling current node
+2026-11-16T20:04:30.089516666Z stderr F I1116 20:04:30.089089       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:30.089594476Z stderr F I1116 20:04:30.089232       1 main.go:301] handling current node
+2026-11-16T20:04:40.080750977Z stderr F I1116 20:04:40.080425       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:40.080795166Z stderr F I1116 20:04:40.080494       1 main.go:301] handling current node
+2026-11-16T20:04:50.081038732Z stderr F I1116 20:04:50.080841       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:04:50.081066037Z stderr F I1116 20:04:50.080878       1 main.go:301] handling current node
+2026-11-16T20:05:00.078768286Z stderr F I1116 20:05:00.078168       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:00.078822425Z stderr F I1116 20:05:00.078302       1 main.go:301] handling current node
+2026-11-16T20:05:10.088074861Z stderr F I1116 20:05:10.087539       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:10.088123989Z stderr F I1116 20:05:10.087611       1 main.go:301] handling current node
+2026-11-16T20:05:20.078618012Z stderr F I1116 20:05:20.078353       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:20.078650569Z stderr F I1116 20:05:20.078410       1 main.go:301] handling current node
+2026-11-16T20:05:30.084687615Z stderr F I1116 20:05:30.084247       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:30.084730359Z stderr F I1116 20:05:30.084326       1 main.go:301] handling current node
+2026-11-16T20:05:40.086102042Z stderr F I1116 20:05:40.085603       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:40.086147898Z stderr F I1116 20:05:40.085661       1 main.go:301] handling current node
+2026-11-16T20:05:50.077113689Z stderr F I1116 20:05:50.076525       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:05:50.077179009Z stderr F I1116 20:05:50.076622       1 main.go:301] handling current node
+2026-11-16T20:06:00.081523277Z stderr F I1116 20:06:00.081114       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:00.081573038Z stderr F I1116 20:06:00.081208       1 main.go:301] handling current node
+2026-11-16T20:06:10.084707261Z stderr F I1116 20:06:10.084322       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:10.084738066Z stderr F I1116 20:06:10.084361       1 main.go:301] handling current node
+2026-11-16T20:06:20.075017682Z stderr F I1116 20:06:20.074823       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:20.075041086Z stderr F I1116 20:06:20.074868       1 main.go:301] handling current node
+2026-11-16T20:06:30.070067324Z stderr F I1116 20:06:30.069865       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:30.070095044Z stderr F I1116 20:06:30.069900       1 main.go:301] handling current node
+2026-11-16T20:06:40.076691794Z stderr F I1116 20:06:40.076137       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:40.076779585Z stderr F I1116 20:06:40.076462       1 main.go:301] handling current node
+2026-11-16T20:06:50.067716492Z stderr F I1116 20:06:50.067247       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:06:50.067763256Z stderr F I1116 20:06:50.067334       1 main.go:301] handling current node
+2026-11-16T20:07:00.079621208Z stderr F I1116 20:07:00.079068       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:00.079666824Z stderr F I1116 20:07:00.079140       1 main.go:301] handling current node
+2026-11-16T20:07:10.072368681Z stderr F I1116 20:07:10.071591       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:10.072424493Z stderr F I1116 20:07:10.071678       1 main.go:301] handling current node
+2026-11-16T20:07:20.071496536Z stderr F I1116 20:07:20.071335       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:20.071531651Z stderr F I1116 20:07:20.071372       1 main.go:301] handling current node
+2026-11-16T20:07:30.077030402Z stderr F I1116 20:07:30.076752       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:30.077059041Z stderr F I1116 20:07:30.076786       1 main.go:301] handling current node
+2026-11-16T20:07:40.069858113Z stderr F I1116 20:07:40.069641       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:40.069885318Z stderr F I1116 20:07:40.069737       1 main.go:301] handling current node
+2026-11-16T20:07:50.069059666Z stderr F I1116 20:07:50.068893       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:07:50.069084612Z stderr F I1116 20:07:50.068931       1 main.go:301] handling current node
+2026-11-16T20:08:00.067666622Z stderr F I1116 20:08:00.067331       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:00.067720907Z stderr F I1116 20:08:00.067421       1 main.go:301] handling current node
+2026-11-16T20:08:10.076124036Z stderr F I1116 20:08:10.075855       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:10.076158738Z stderr F I1116 20:08:10.075909       1 main.go:301] handling current node
+2026-11-16T20:08:20.067390108Z stderr F I1116 20:08:20.067246       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:20.067416704Z stderr F I1116 20:08:20.067280       1 main.go:301] handling current node
+2026-11-16T20:08:30.065422802Z stderr F I1116 20:08:30.065112       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:30.065478555Z stderr F I1116 20:08:30.065186       1 main.go:301] handling current node
+2026-11-16T20:08:40.074470547Z stderr F I1116 20:08:40.074263       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:40.074493489Z stderr F I1116 20:08:40.074294       1 main.go:301] handling current node
+2026-11-16T20:08:50.065493993Z stderr F I1116 20:08:50.065127       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:08:50.065544336Z stderr F I1116 20:08:50.065206       1 main.go:301] handling current node
+2026-11-16T20:09:00.071484681Z stderr F I1116 20:09:00.071225       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:00.071518253Z stderr F I1116 20:09:00.071286       1 main.go:301] handling current node
+2026-11-16T20:09:10.072480251Z stderr F I1116 20:09:10.072172       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:10.07251478Z stderr F I1116 20:09:10.072218       1 main.go:301] handling current node
+2026-11-16T20:09:20.063892571Z stderr F I1116 20:09:20.063440       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:20.063934969Z stderr F I1116 20:09:20.063503       1 main.go:301] handling current node
+2026-11-16T20:09:30.062230768Z stderr F I1116 20:09:30.061943       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:30.062264934Z stderr F I1116 20:09:30.061997       1 main.go:301] handling current node
+2026-11-16T20:09:40.07144478Z stderr F I1116 20:09:40.071257       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:40.071476402Z stderr F I1116 20:09:40.071297       1 main.go:301] handling current node
+2026-11-16T20:09:50.069887308Z stderr F I1116 20:09:50.069580       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:09:50.06992594Z stderr F I1116 20:09:50.069642       1 main.go:301] handling current node
+2026-11-16T20:10:00.060267901Z stderr F I1116 20:10:00.060080       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:00.060297121Z stderr F I1116 20:10:00.060128       1 main.go:301] handling current node
+2026-11-16T20:10:10.060411985Z stderr F I1116 20:10:10.060181       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:10.060442515Z stderr F I1116 20:10:10.060230       1 main.go:301] handling current node
+2026-11-16T20:10:20.060516395Z stderr F I1116 20:10:20.060350       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:20.060542418Z stderr F I1116 20:10:20.060399       1 main.go:301] handling current node
+2026-11-16T20:10:30.065784732Z stderr F I1116 20:10:30.065426       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:30.065814963Z stderr F I1116 20:10:30.065475       1 main.go:301] handling current node
+2026-11-16T20:10:40.059123756Z stderr F I1116 20:10:40.058833       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:40.059156387Z stderr F I1116 20:10:40.058888       1 main.go:301] handling current node
+2026-11-16T20:10:50.067321384Z stderr F I1116 20:10:50.067058       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:10:50.067355695Z stderr F I1116 20:10:50.067114       1 main.go:301] handling current node
+2026-11-16T20:11:00.064526427Z stderr F I1116 20:11:00.064272       1 main.go:297] Handling node with IPs: map[172.19.0.2:{}]
+2026-11-16T20:11:00.064563333Z stderr F I1116 20:11:00.064320       1 main.go:301] handling current node

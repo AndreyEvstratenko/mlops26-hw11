@@ -1,0 +1,8 @@
+Load: scale-out; service=api; planned=4320; epoch in ~10s
+PASS HPA reaches 3 ready replicas
+PASS HPA returns to 2 ready replicas
+Load: sticky-hot-after-scale; service=api-sticky; planned=720; epoch in ~10s
+Load: alert-stimulus; service=api; planned=3360; epoch in ~10s
+Load: alert-recovery; service=api; planned=100; epoch in ~10s
+PASS LabHighTTFC pending/firing/recovered
+PASS LabRefusals pending/firing/recovered

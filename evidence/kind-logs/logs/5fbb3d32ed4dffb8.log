@@ -1,0 +1,45 @@
+2026-11-16T20:12:15.802446638Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:16.303013543Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:16.803300605Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:17.303262994Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:17.803335513Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:18.303247663Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:18.803669062Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:19.303022442Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:19.803240419Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2026-11-16T20:12:20.30354025Z stdout F [WARNING] plugin/kubernetes: starting server with unsynced Kubernetes API
+2026-11-16T20:12:20.303767017Z stdout F .:53
+2026-11-16T20:12:20.303867397Z stdout F [INFO] plugin/reload: Running configuration SHA512 = 1b226df79860026c6a52e67daa10d7f0d57ec5b023288ec00c5e05f93523c894564e15b91770d3a07ae1cfbe861d15b37d4a0027e69c546ab112970993a3b03b
+2026-11-16T20:12:20.303874846Z stdout F CoreDNS-1.11.3
+2026-11-16T20:12:20.303876919Z stdout F linux/amd64, go1.21.11, a6338e9
+2026-11-16T20:12:20.801446027Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2026-11-16T20:12:20.802070519Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2026-11-16T20:12:26.311113606Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:33018->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:29.31219713Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:52791->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:30.312979788Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:35915->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:30.803348453Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2026-11-16T20:12:31.314210472Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:32870->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:34.316485515Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:35041->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:37.317333638Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:59051->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:40.32005233Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:35518->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:40.802456337Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2026-11-16T20:12:43.321070194Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:48946->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:45.30933881Z stdout F [INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: failed to list *v1.Namespace: Get "https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:45.309360668Z stdout F [INFO] plugin/kubernetes: Trace[934264483]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229 (16-Nov-2026 20:12:15.306) (total time: 30003ms):
+2026-11-16T20:12:45.309362047Z stdout F Trace[934264483]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout 30003ms (20:12:45.309)
+2026-11-16T20:12:45.309363304Z stdout F Trace[934264483]: [30.003597219s] [30.003597219s] END
+2026-11-16T20:12:45.309366088Z stdout F [ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: Failed to watch *v1.Namespace: failed to list *v1.Namespace: Get "https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:45.309376486Z stdout F [INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:45.309382025Z stdout F [INFO] plugin/kubernetes: Trace[1241306110]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229 (16-Nov-2026 20:12:15.306) (total time: 30003ms):
+2026-11-16T20:12:45.309383527Z stdout F Trace[1241306110]: ---"Objects listed" error:Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout 30003ms (20:12:45.309)
+2026-11-16T20:12:45.309384518Z stdout F Trace[1241306110]: [30.003691417s] [30.003691417s] END
+2026-11-16T20:12:45.309388032Z stdout F [ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: Failed to watch *v1.EndpointSlice: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:45.309389186Z stdout F [INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:45.30944161Z stdout F [INFO] plugin/kubernetes: Trace[1975418182]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229 (16-Nov-2026 20:12:15.306) (total time: 30003ms):
+2026-11-16T20:12:45.309453217Z stdout F Trace[1975418182]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout 30003ms (20:12:45.309)
+2026-11-16T20:12:45.309454599Z stdout F Trace[1975418182]: [30.003815647s] [30.003815647s] END
+2026-11-16T20:12:45.309455846Z stdout F [ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.29.3/tools/cache/reflector.go:229: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+2026-11-16T20:12:46.321640841Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:52541->192.168.65.254:53: i/o timeout
+2026-11-16T20:12:49.323840365Z stdout F [ERROR] plugin/errors: 2 8248435861526832049.5633049699148867967. HINFO: read udp 10.244.0.2:43394->192.168.65.254:53: i/o timeout
+2026-11-16T21:33:54.869210881Z stdout F [ERROR] plugin/errors: 2 grafana.com. A: read udp 10.244.0.2:45651->192.168.65.254:53: i/o timeout
+2026-11-16T21:33:56.870185542Z stdout F [ERROR] plugin/errors: 2 grafana.com. A: read udp 10.244.0.2:50344->192.168.65.254:53: i/o timeout

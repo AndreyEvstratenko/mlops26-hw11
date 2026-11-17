@@ -1,0 +1,10 @@
+2026-11-16T21:25:45.728170547Z INFO:     Started server process [1]
+2026-11-16T21:25:45.728239789Z INFO:     Waiting for application startup.
+2026-11-16T21:25:45.730572637Z INFO:     Application startup complete.
+2026-11-16T21:25:45.730784732Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-16T21:26:05.805379155Z {"event": "warmup_complete", "wall": 1794864365.8051314, "pod": "api-79cdc6b76d-7cf47", "version": "A", "backend_mode": "simulated", "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196"}
+2026-11-16T21:27:28.643730474Z {"event": "drain_started", "wall": 1794864448.643448, "pod": "api-79cdc6b76d-7cf47", "version": "A", "backend_mode": "simulated"}
+2026-11-16T21:27:36.660973950Z INFO:     Shutting down
+2026-11-16T21:27:36.762419417Z INFO:     Waiting for application shutdown.
+2026-11-16T21:27:36.762801851Z INFO:     Application shutdown complete.
+2026-11-16T21:27:36.763524898Z INFO:     Finished server process [1]

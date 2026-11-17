@@ -1,0 +1,1720 @@
+{
+  "services": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "lab11",
+            "meta.helm.sh/release-namespace": "lab11"
+          },
+          "creationTimestamp": "2026-11-16T20:13:31Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api",
+          "namespace": "lab11",
+          "resourceVersion": "1291",
+          "uid": "1e1f86d1-9086-4bc5-a427-3cc0dad60b1e"
+        },
+        "spec": {
+          "clusterIP": "10.96.170.183",
+          "clusterIPs": [
+            "10.96.170.183"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": "http"
+            }
+          ],
+          "selector": {
+            "app": "api"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "lab11",
+            "meta.helm.sh/release-namespace": "lab11"
+          },
+          "creationTimestamp": "2026-11-16T20:13:31Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api-sticky",
+          "namespace": "lab11",
+          "resourceVersion": "1295",
+          "uid": "3d543649-4371-4f3c-8d94-ead557995126"
+        },
+        "spec": {
+          "clusterIP": "10.96.5.237",
+          "clusterIPs": [
+            "10.96.5.237"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": "http"
+            }
+          ],
+          "selector": {
+            "app": "api"
+          },
+          "sessionAffinity": "ClientIP",
+          "sessionAffinityConfig": {
+            "clientIP": {
+              "timeoutSeconds": 10800
+            }
+          },
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"grafana\",\"namespace\":\"lab11\"},\"spec\":{\"ports\":[{\"port\":3000}],\"selector\":{\"app\":\"grafana\"}}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:32Z",
+          "name": "grafana",
+          "namespace": "lab11",
+          "resourceVersion": "1371",
+          "uid": "ff08e9ea-2c5b-4c36-b833-0a0cdcf625f3"
+        },
+        "spec": {
+          "clusterIP": "10.96.38.162",
+          "clusterIPs": [
+            "10.96.38.162"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 3000,
+              "protocol": "TCP",
+              "targetPort": 3000
+            }
+          ],
+          "selector": {
+            "app": "grafana"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"kube-state\",\"namespace\":\"lab11\"},\"spec\":{\"ports\":[{\"port\":8080}],\"selector\":{\"app\":\"kube-state\"}}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:32Z",
+          "name": "kube-state",
+          "namespace": "lab11",
+          "resourceVersion": "1356",
+          "uid": "40739766-91a5-4ed1-a5b9-d70802118ca1"
+        },
+        "spec": {
+          "clusterIP": "10.96.129.90",
+          "clusterIPs": [
+            "10.96.129.90"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": 8080
+            }
+          ],
+          "selector": {
+            "app": "kube-state"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"prometheus\",\"namespace\":\"lab11\"},\"spec\":{\"ports\":[{\"port\":9090}],\"selector\":{\"app\":\"prometheus\"}}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:32Z",
+          "name": "prometheus",
+          "namespace": "lab11",
+          "resourceVersion": "1339",
+          "uid": "f7901c19-6963-45ce-8f7d-18e1a4b18948"
+        },
+        "spec": {
+          "clusterIP": "10.96.118.110",
+          "clusterIPs": [
+            "10.96.118.110"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP",
+              "targetPort": 9090
+            }
+          ],
+          "selector": {
+            "app": "prometheus"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  },
+  "clients": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"load-client\"},\"name\":\"client-0\",\"namespace\":\"lab11\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time;time.sleep(604800)\"],\"image\":\"andrey11-api:1.0.0\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"client\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"160Mi\"},\"requests\":{\"cpu\":\"30m\",\"memory\":\"48Mi\"}}}],\"terminationGracePeriodSeconds\":1}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:33Z",
+          "labels": {
+            "app": "load-client"
+          },
+          "name": "client-0",
+          "namespace": "lab11",
+          "resourceVersion": "1429",
+          "uid": "0eae54a4-cd9d-4b6b-a88e-61b19db5bbe8"
+        },
+        "spec": {
+          "containers": [
+            {
+              "command": [
+                "python",
+                "-c",
+                "import time;time.sleep(604800)"
+              ],
+              "image": "andrey11-api:1.0.0",
+              "imagePullPolicy": "IfNotPresent",
+              "name": "client",
+              "resources": {
+                "limits": {
+                  "cpu": "500m",
+                  "memory": "160Mi"
+                },
+                "requests": {
+                  "cpu": "30m",
+                  "memory": "48Mi"
+                }
+              },
+              "terminationMessagePath": "/dev/termination-log",
+              "terminationMessagePolicy": "File",
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-jjhh9",
+                  "readOnly": true
+                }
+              ]
+            }
+          ],
+          "dnsPolicy": "ClusterFirst",
+          "enableServiceLinks": true,
+          "nodeName": "mlops-andrey11-control-plane",
+          "preemptionPolicy": "PreemptLowerPriority",
+          "priority": 0,
+          "restartPolicy": "Always",
+          "schedulerName": "default-scheduler",
+          "securityContext": {},
+          "serviceAccount": "default",
+          "serviceAccountName": "default",
+          "terminationGracePeriodSeconds": 1,
+          "tolerations": [
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/not-ready",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            },
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/unreachable",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            }
+          ],
+          "volumes": [
+            {
+              "name": "kube-api-access-jjhh9",
+              "projected": {
+                "defaultMode": 420,
+                "sources": [
+                  {
+                    "serviceAccountToken": {
+                      "expirationSeconds": 3607,
+                      "path": "token"
+                    }
+                  },
+                  {
+                    "configMap": {
+                      "items": [
+                        {
+                          "key": "ca.crt",
+                          "path": "ca.crt"
+                        }
+                      ],
+                      "name": "kube-root-ca.crt"
+                    }
+                  },
+                  {
+                    "downwardAPI": {
+                      "items": [
+                        {
+                          "fieldRef": {
+                            "apiVersion": "v1",
+                            "fieldPath": "metadata.namespace"
+                          },
+                          "path": "namespace"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "PodReadyToStartContainers"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "Initialized"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "ContainersReady"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "PodScheduled"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "containerID": "containerd://79908dccd0eb16b049cd56ef7839f9b41ee26af57a7339920cffbbe6db367d4f",
+              "image": "docker.io/library/andrey11-api:1.0.0",
+              "imageID": "sha256:ad405f1235ee713ecaaa32e2f3743b447f07c36d09fb72371f7f1b2578553876",
+              "lastState": {},
+              "name": "client",
+              "ready": true,
+              "restartCount": 0,
+              "started": true,
+              "state": {
+                "running": {
+                  "startedAt": "2026-11-16T20:13:33Z"
+                }
+              },
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-jjhh9",
+                  "readOnly": true,
+                  "recursiveReadOnly": "Disabled"
+                }
+              ]
+            }
+          ],
+          "hostIP": "172.19.0.2",
+          "hostIPs": [
+            {
+              "ip": "172.19.0.2"
+            }
+          ],
+          "phase": "Running",
+          "podIP": "10.244.0.12",
+          "podIPs": [
+            {
+              "ip": "10.244.0.12"
+            }
+          ],
+          "qosClass": "Burstable",
+          "startTime": "2026-11-16T20:13:33Z"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"load-client\"},\"name\":\"client-1\",\"namespace\":\"lab11\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time;time.sleep(604800)\"],\"image\":\"andrey11-api:1.0.0\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"client\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"160Mi\"},\"requests\":{\"cpu\":\"30m\",\"memory\":\"48Mi\"}}}],\"terminationGracePeriodSeconds\":1}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:33Z",
+          "labels": {
+            "app": "load-client"
+          },
+          "name": "client-1",
+          "namespace": "lab11",
+          "resourceVersion": "1430",
+          "uid": "c169c2cf-3d2d-437e-b003-40687ce405d6"
+        },
+        "spec": {
+          "containers": [
+            {
+              "command": [
+                "python",
+                "-c",
+                "import time;time.sleep(604800)"
+              ],
+              "image": "andrey11-api:1.0.0",
+              "imagePullPolicy": "IfNotPresent",
+              "name": "client",
+              "resources": {
+                "limits": {
+                  "cpu": "500m",
+                  "memory": "160Mi"
+                },
+                "requests": {
+                  "cpu": "30m",
+                  "memory": "48Mi"
+                }
+              },
+              "terminationMessagePath": "/dev/termination-log",
+              "terminationMessagePolicy": "File",
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-qhwzk",
+                  "readOnly": true
+                }
+              ]
+            }
+          ],
+          "dnsPolicy": "ClusterFirst",
+          "enableServiceLinks": true,
+          "nodeName": "mlops-andrey11-control-plane",
+          "preemptionPolicy": "PreemptLowerPriority",
+          "priority": 0,
+          "restartPolicy": "Always",
+          "schedulerName": "default-scheduler",
+          "securityContext": {},
+          "serviceAccount": "default",
+          "serviceAccountName": "default",
+          "terminationGracePeriodSeconds": 1,
+          "tolerations": [
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/not-ready",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            },
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/unreachable",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            }
+          ],
+          "volumes": [
+            {
+              "name": "kube-api-access-qhwzk",
+              "projected": {
+                "defaultMode": 420,
+                "sources": [
+                  {
+                    "serviceAccountToken": {
+                      "expirationSeconds": 3607,
+                      "path": "token"
+                    }
+                  },
+                  {
+                    "configMap": {
+                      "items": [
+                        {
+                          "key": "ca.crt",
+                          "path": "ca.crt"
+                        }
+                      ],
+                      "name": "kube-root-ca.crt"
+                    }
+                  },
+                  {
+                    "downwardAPI": {
+                      "items": [
+                        {
+                          "fieldRef": {
+                            "apiVersion": "v1",
+                            "fieldPath": "metadata.namespace"
+                          },
+                          "path": "namespace"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "PodReadyToStartContainers"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "Initialized"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "ContainersReady"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "PodScheduled"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "containerID": "containerd://90b06a841cecd6d24b67b56a7eee5405d0a7a74fc8f7f4ce864d0ef9a1d62850",
+              "image": "docker.io/library/andrey11-api:1.0.0",
+              "imageID": "sha256:ad405f1235ee713ecaaa32e2f3743b447f07c36d09fb72371f7f1b2578553876",
+              "lastState": {},
+              "name": "client",
+              "ready": true,
+              "restartCount": 0,
+              "started": true,
+              "state": {
+                "running": {
+                  "startedAt": "2026-11-16T20:13:33Z"
+                }
+              },
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-qhwzk",
+                  "readOnly": true,
+                  "recursiveReadOnly": "Disabled"
+                }
+              ]
+            }
+          ],
+          "hostIP": "172.19.0.2",
+          "hostIPs": [
+            {
+              "ip": "172.19.0.2"
+            }
+          ],
+          "phase": "Running",
+          "podIP": "10.244.0.13",
+          "podIPs": [
+            {
+              "ip": "10.244.0.13"
+            }
+          ],
+          "qosClass": "Burstable",
+          "startTime": "2026-11-16T20:13:33Z"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"load-client\"},\"name\":\"client-2\",\"namespace\":\"lab11\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time;time.sleep(604800)\"],\"image\":\"andrey11-api:1.0.0\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"client\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"160Mi\"},\"requests\":{\"cpu\":\"30m\",\"memory\":\"48Mi\"}}}],\"terminationGracePeriodSeconds\":1}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:33Z",
+          "labels": {
+            "app": "load-client"
+          },
+          "name": "client-2",
+          "namespace": "lab11",
+          "resourceVersion": "1428",
+          "uid": "09cc3582-6ab2-4f03-82b0-95c97cc51d15"
+        },
+        "spec": {
+          "containers": [
+            {
+              "command": [
+                "python",
+                "-c",
+                "import time;time.sleep(604800)"
+              ],
+              "image": "andrey11-api:1.0.0",
+              "imagePullPolicy": "IfNotPresent",
+              "name": "client",
+              "resources": {
+                "limits": {
+                  "cpu": "500m",
+                  "memory": "160Mi"
+                },
+                "requests": {
+                  "cpu": "30m",
+                  "memory": "48Mi"
+                }
+              },
+              "terminationMessagePath": "/dev/termination-log",
+              "terminationMessagePolicy": "File",
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-dgr2r",
+                  "readOnly": true
+                }
+              ]
+            }
+          ],
+          "dnsPolicy": "ClusterFirst",
+          "enableServiceLinks": true,
+          "nodeName": "mlops-andrey11-control-plane",
+          "preemptionPolicy": "PreemptLowerPriority",
+          "priority": 0,
+          "restartPolicy": "Always",
+          "schedulerName": "default-scheduler",
+          "securityContext": {},
+          "serviceAccount": "default",
+          "serviceAccountName": "default",
+          "terminationGracePeriodSeconds": 1,
+          "tolerations": [
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/not-ready",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            },
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/unreachable",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            }
+          ],
+          "volumes": [
+            {
+              "name": "kube-api-access-dgr2r",
+              "projected": {
+                "defaultMode": 420,
+                "sources": [
+                  {
+                    "serviceAccountToken": {
+                      "expirationSeconds": 3607,
+                      "path": "token"
+                    }
+                  },
+                  {
+                    "configMap": {
+                      "items": [
+                        {
+                          "key": "ca.crt",
+                          "path": "ca.crt"
+                        }
+                      ],
+                      "name": "kube-root-ca.crt"
+                    }
+                  },
+                  {
+                    "downwardAPI": {
+                      "items": [
+                        {
+                          "fieldRef": {
+                            "apiVersion": "v1",
+                            "fieldPath": "metadata.namespace"
+                          },
+                          "path": "namespace"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "PodReadyToStartContainers"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "Initialized"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "ContainersReady"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "PodScheduled"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "containerID": "containerd://a2fbb191388bc1955515e4c17fc87a2bd4606c59043064f183b97d746f7ebb2b",
+              "image": "docker.io/library/andrey11-api:1.0.0",
+              "imageID": "sha256:ad405f1235ee713ecaaa32e2f3743b447f07c36d09fb72371f7f1b2578553876",
+              "lastState": {},
+              "name": "client",
+              "ready": true,
+              "restartCount": 0,
+              "started": true,
+              "state": {
+                "running": {
+                  "startedAt": "2026-11-16T20:13:34Z"
+                }
+              },
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-dgr2r",
+                  "readOnly": true,
+                  "recursiveReadOnly": "Disabled"
+                }
+              ]
+            }
+          ],
+          "hostIP": "172.19.0.2",
+          "hostIPs": [
+            {
+              "ip": "172.19.0.2"
+            }
+          ],
+          "phase": "Running",
+          "podIP": "10.244.0.14",
+          "podIPs": [
+            {
+              "ip": "10.244.0.14"
+            }
+          ],
+          "qosClass": "Burstable",
+          "startTime": "2026-11-16T20:13:33Z"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "metadata": {
+          "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"load-client\"},\"name\":\"client-3\",\"namespace\":\"lab11\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time;time.sleep(604800)\"],\"image\":\"andrey11-api:1.0.0\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"client\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"160Mi\"},\"requests\":{\"cpu\":\"30m\",\"memory\":\"48Mi\"}}}],\"terminationGracePeriodSeconds\":1}}\n"
+          },
+          "creationTimestamp": "2026-11-16T20:13:33Z",
+          "labels": {
+            "app": "load-client"
+          },
+          "name": "client-3",
+          "namespace": "lab11",
+          "resourceVersion": "1427",
+          "uid": "197436cf-a289-4307-803f-578df133e61c"
+        },
+        "spec": {
+          "containers": [
+            {
+              "command": [
+                "python",
+                "-c",
+                "import time;time.sleep(604800)"
+              ],
+              "image": "andrey11-api:1.0.0",
+              "imagePullPolicy": "IfNotPresent",
+              "name": "client",
+              "resources": {
+                "limits": {
+                  "cpu": "500m",
+                  "memory": "160Mi"
+                },
+                "requests": {
+                  "cpu": "30m",
+                  "memory": "48Mi"
+                }
+              },
+              "terminationMessagePath": "/dev/termination-log",
+              "terminationMessagePolicy": "File",
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-pcwt9",
+                  "readOnly": true
+                }
+              ]
+            }
+          ],
+          "dnsPolicy": "ClusterFirst",
+          "enableServiceLinks": true,
+          "nodeName": "mlops-andrey11-control-plane",
+          "preemptionPolicy": "PreemptLowerPriority",
+          "priority": 0,
+          "restartPolicy": "Always",
+          "schedulerName": "default-scheduler",
+          "securityContext": {},
+          "serviceAccount": "default",
+          "serviceAccountName": "default",
+          "terminationGracePeriodSeconds": 1,
+          "tolerations": [
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/not-ready",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            },
+            {
+              "effect": "NoExecute",
+              "key": "node.kubernetes.io/unreachable",
+              "operator": "Exists",
+              "tolerationSeconds": 300
+            }
+          ],
+          "volumes": [
+            {
+              "name": "kube-api-access-pcwt9",
+              "projected": {
+                "defaultMode": 420,
+                "sources": [
+                  {
+                    "serviceAccountToken": {
+                      "expirationSeconds": 3607,
+                      "path": "token"
+                    }
+                  },
+                  {
+                    "configMap": {
+                      "items": [
+                        {
+                          "key": "ca.crt",
+                          "path": "ca.crt"
+                        }
+                      ],
+                      "name": "kube-root-ca.crt"
+                    }
+                  },
+                  {
+                    "downwardAPI": {
+                      "items": [
+                        {
+                          "fieldRef": {
+                            "apiVersion": "v1",
+                            "fieldPath": "metadata.namespace"
+                          },
+                          "path": "namespace"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "PodReadyToStartContainers"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "Initialized"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:34Z",
+              "status": "True",
+              "type": "ContainersReady"
+            },
+            {
+              "lastProbeTime": null,
+              "lastTransitionTime": "2026-11-16T20:13:33Z",
+              "status": "True",
+              "type": "PodScheduled"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "containerID": "containerd://d7cb1fadbdc11e756fb9b8d0a879bc973048e9946f56d3763fbd67eda04e3a29",
+              "image": "docker.io/library/andrey11-api:1.0.0",
+              "imageID": "sha256:ad405f1235ee713ecaaa32e2f3743b447f07c36d09fb72371f7f1b2578553876",
+              "lastState": {},
+              "name": "client",
+              "ready": true,
+              "restartCount": 0,
+              "started": true,
+              "state": {
+                "running": {
+                  "startedAt": "2026-11-16T20:13:34Z"
+                }
+              },
+              "volumeMounts": [
+                {
+                  "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                  "name": "kube-api-access-pcwt9",
+                  "readOnly": true,
+                  "recursiveReadOnly": "Disabled"
+                }
+              ]
+            }
+          ],
+          "hostIP": "172.19.0.2",
+          "hostIPs": [
+            {
+              "ip": "172.19.0.2"
+            }
+          ],
+          "phase": "Running",
+          "podIP": "10.244.0.15",
+          "podIPs": [
+            {
+              "ip": "10.244.0.15"
+            }
+          ],
+          "qosClass": "Burstable",
+          "startTime": "2026-11-16T20:13:33Z"
+        }
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  },
+  "proxy_mode": "nftables",
+  "ip_family": "IPv4",
+  "requests_per_client": 8,
+  "trace": {
+    "api": {
+      "client-0": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-1": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-2": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-3": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ]
+    },
+    "api-sticky": {
+      "client-0": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-1": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-2": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 9,
+          "pod": "api-67d89698c7-z9t6l",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ],
+      "client-3": [
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        },
+        {
+          "warm": true,
+          "draining": false,
+          "waiting": 0,
+          "cache_entries": 0,
+          "pod": "api-67d89698c7-gckkn",
+          "version": "A",
+          "model_id": "simulated-A",
+          "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196",
+          "backend_mode": "simulated"
+        }
+      ]
+    }
+  }
+}

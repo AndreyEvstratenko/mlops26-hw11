@@ -1,0 +1,7 @@
+Load: dialogue-before-replacement; service=10.244.0.17; planned=4; epoch in ~10s
+Load: dialogue-recovery; service=10.244.0.18; planned=4; epoch in ~10s
+PASS warmup rejects direct readiness
+PASS replacement preserves artifact version
+PASS dialogue isolation
+Load: accounting; service=api; planned=2; epoch in ~10s
+PASS refusal and incomplete stream accounting

@@ -1,0 +1,17 @@
+2026-11-16T20:18:17.143073282Z stderr F I1116 20:18:17.142575       1 wrapper.go:120] "Starting kube-state-metrics"
+2026-11-16T20:18:17.14311675Z stderr F W1116 20:18:17.142988       1 client_config.go:667] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+2026-11-16T20:18:17.143202428Z stderr F I1116 20:18:17.143094       1 server.go:200] "Used resources" resources=["pods","deployments","horizontalpodautoscalers"]
+2026-11-16T20:18:17.143213529Z stderr F I1116 20:18:17.143129       1 types.go:201] "Using namespaces" nameSpaces=["lab11"]
+2026-11-16T20:18:17.143215494Z stderr F I1116 20:18:17.143138       1 server.go:233] "Metric allow-denylisting" allowDenyStatus="Excluding the following lists that were on denylist: "
+2026-11-16T20:18:17.143216785Z stderr F W1116 20:18:17.143154       1 client_config.go:667] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+2026-11-16T20:18:17.143620787Z stderr F I1116 20:18:17.143423       1 utils.go:70] "Tested communication with server"
+2026-11-16T20:18:17.146957931Z stderr F I1116 20:18:17.146870       1 utils.go:75] "Run with Kubernetes cluster version" major="1" minor="32" gitVersion="v1.32.2" gitTreeState="clean" gitCommit="67a30c0adcf52bd3f56ff0893ce19966be12991f" platform="linux/amd64"
+2026-11-16T20:18:17.146967563Z stderr F I1116 20:18:17.146889       1 utils.go:76] "Communication with server successful"
+2026-11-16T20:18:17.148062335Z stderr F I1116 20:18:17.147963       1 metrics_handler.go:110] "Autosharding disabled"
+2026-11-16T20:18:17.1480709Z stderr F I1116 20:18:17.147973       1 server.go:350] "Started kube-state-metrics self metrics server" telemetryAddress="[::]:8081"
+2026-11-16T20:18:17.148085691Z stderr F I1116 20:18:17.148041       1 server.go:361] "Started metrics server" metricsServerAddress="[::]:8080"
+2026-11-16T20:18:17.148300395Z stderr F I1116 20:18:17.148100       1 builder.go:283] "Active resources" activeStoreNames="deployments,horizontalpodautoscalers,pods"
+2026-11-16T20:18:17.148325377Z stderr F I1116 20:18:17.148232       1 tls_config.go:347] "Listening on" address="[::]:8081"
+2026-11-16T20:18:17.148334386Z stderr F I1116 20:18:17.148262       1 tls_config.go:350] "TLS is disabled." http2=false address="[::]:8081"
+2026-11-16T20:18:17.148337688Z stderr F I1116 20:18:17.148280       1 tls_config.go:347] "Listening on" address="[::]:8080"
+2026-11-16T20:18:17.148340555Z stderr F I1116 20:18:17.148304       1 tls_config.go:350] "TLS is disabled." http2=false address="[::]:8080"

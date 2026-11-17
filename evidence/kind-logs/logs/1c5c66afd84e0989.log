@@ -1,0 +1,5 @@
+2026-11-16T21:34:54.189026433Z stderr F INFO:     Started server process [1]
+2026-11-16T21:34:54.189061809Z stderr F INFO:     Waiting for application startup.
+2026-11-16T21:34:54.191773837Z stderr F INFO:     Application startup complete.
+2026-11-16T21:34:54.19192001Z stderr F INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-16T21:35:14.262498035Z stdout F {"event": "warmup_complete", "wall": 1794864914.2620313, "pod": "api-64978fdc54-4sbjx", "version": "A", "backend_mode": "simulated", "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196"}

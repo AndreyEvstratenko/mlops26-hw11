@@ -1,0 +1,1042 @@
+{
+  "total_requests": 18273,
+  "checks": [
+    {
+      "name": "A/after-kill planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 6,
+        "recorded": 6
+      }
+    },
+    {
+      "name": "A/after-kill complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 6
+      }
+    },
+    {
+      "name": "A/after-kill outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 6
+      }
+    },
+    {
+      "name": "A/broken planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 140,
+        "recorded": 140
+      }
+    },
+    {
+      "name": "A/broken complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 124
+      }
+    },
+    {
+      "name": "A/broken outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 124,
+        "rejected": 16
+      }
+    },
+    {
+      "name": "A/fixed planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 140,
+        "recorded": 140
+      }
+    },
+    {
+      "name": "A/fixed complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 140
+      }
+    },
+    {
+      "name": "A/fixed outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 140
+      }
+    },
+    {
+      "name": "A/forced-kill planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 1,
+        "recorded": 1
+      }
+    },
+    {
+      "name": "A/forced-kill complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 0
+      }
+    },
+    {
+      "name": "A/forced-kill outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "aborted": 1
+      }
+    },
+    {
+      "name": "A/rollback-to-A planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 16,
+        "recorded": 16
+      }
+    },
+    {
+      "name": "A/rollback-to-A complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 16
+      }
+    },
+    {
+      "name": "A/rollback-to-A outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 16
+      }
+    },
+    {
+      "name": "A/rollout-A-B planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 100,
+        "recorded": 100
+      }
+    },
+    {
+      "name": "A/rollout-A-B complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 100
+      }
+    },
+    {
+      "name": "A/rollout-A-B outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 100
+      }
+    },
+    {
+      "name": "B/hot-api-1 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-1 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-1 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-1 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-1 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-2 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-2 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-2 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-2 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-2 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-3 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-3 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-3 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-3 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-3 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-1 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-1 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 487
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-1 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-sticky-1 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 487,
+        "rejected": 233
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-1 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-8947f4945-dqh7z"
+        ],
+        "client-2": [
+          "api-8947f4945-dqh7z"
+        ],
+        "client-0": [
+          "api-8947f4945-dqh7z"
+        ],
+        "client-1": [
+          "api-8947f4945-2brkc"
+        ]
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-1 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 487,
+        "rejected": 233
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-2 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-2 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 440
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-2 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-sticky-2 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 440,
+        "rejected": 280
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-2 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-56c8d7d87b-rxgq4"
+        ],
+        "client-2": [
+          "api-56c8d7d87b-rxgq4"
+        ],
+        "client-0": [
+          "api-56c8d7d87b-rxgq4"
+        ],
+        "client-1": [
+          "api-56c8d7d87b-rxgq4"
+        ]
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-2 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 440,
+        "rejected": 280
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-3 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-3 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 537
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-3 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/hot-api-sticky-3 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 537,
+        "rejected": 183
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-3 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-77cd777fd7-xr7l9"
+        ],
+        "client-2": [
+          "api-77cd777fd7-27zn6"
+        ],
+        "client-0": [
+          "api-77cd777fd7-xr7l9"
+        ],
+        "client-1": [
+          "api-77cd777fd7-27zn6"
+        ]
+      }
+    },
+    {
+      "name": "B/hot-api-sticky-3 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 537,
+        "rejected": 183
+      }
+    },
+    {
+      "name": "B/uniform-api-1 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-1 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-1 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-1 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-1 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-2 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-2 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-2 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-2 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-2 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-3 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-3 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-3 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-3 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-3 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-1 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-1 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 626
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-1 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-sticky-1 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 626,
+        "rejected": 94
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-1 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-557b864454-mjtm9"
+        ],
+        "client-2": [
+          "api-557b864454-mjtm9"
+        ],
+        "client-0": [
+          "api-557b864454-hrpv8"
+        ],
+        "client-1": [
+          "api-557b864454-mjtm9"
+        ]
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-1 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 626,
+        "rejected": 94
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-2 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-2 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 624
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-2 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-sticky-2 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 624,
+        "rejected": 96
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-2 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-64c9db5d9c-hr6mm"
+        ],
+        "client-2": [
+          "api-64c9db5d9c-4jgnr"
+        ],
+        "client-0": [
+          "api-64c9db5d9c-4jgnr"
+        ],
+        "client-1": [
+          "api-64c9db5d9c-4jgnr"
+        ]
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-2 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 624,
+        "rejected": 96
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-3 planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-3 complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 623
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-3 four observed source IPs",
+      "passed": true,
+      "details": [
+        "10.244.0.12",
+        "10.244.0.13",
+        "10.244.0.14",
+        "10.244.0.15"
+      ]
+    },
+    {
+      "name": "B/uniform-api-sticky-3 generator kept all requests",
+      "passed": true,
+      "details": {
+        "completed": 623,
+        "rejected": 97
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-3 ClientIP mapping preserved",
+      "passed": true,
+      "details": {
+        "client-3": [
+          "api-6dd698b765-49dsp"
+        ],
+        "client-2": [
+          "api-6dd698b765-2s92f"
+        ],
+        "client-0": [
+          "api-6dd698b765-49dsp"
+        ],
+        "client-1": [
+          "api-6dd698b765-49dsp"
+        ]
+      }
+    },
+    {
+      "name": "B/uniform-api-sticky-3 outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 623,
+        "rejected": 97
+      }
+    },
+    {
+      "name": "C/alert-recovery planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 100,
+        "recorded": 100
+      }
+    },
+    {
+      "name": "C/alert-recovery complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 100
+      }
+    },
+    {
+      "name": "C/alert-recovery outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 100
+      }
+    },
+    {
+      "name": "C/alert-stimulus planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 3360,
+        "recorded": 3360
+      }
+    },
+    {
+      "name": "C/alert-stimulus complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 90
+      }
+    },
+    {
+      "name": "C/alert-stimulus outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "rejected": 3270,
+        "completed": 90
+      }
+    },
+    {
+      "name": "C/scale-out planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 4320,
+        "recorded": 4320
+      }
+    },
+    {
+      "name": "C/scale-out complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 1143
+      }
+    },
+    {
+      "name": "C/scale-out outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 1143,
+        "rejected": 3177
+      }
+    },
+    {
+      "name": "C/sticky-hot-after-scale planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "C/sticky-hot-after-scale complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 395
+      }
+    },
+    {
+      "name": "C/sticky-hot-after-scale outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 395,
+        "rejected": 325
+      }
+    },
+    {
+      "name": "checks/accounting planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 2,
+        "recorded": 2
+      }
+    },
+    {
+      "name": "checks/accounting complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 0
+      }
+    },
+    {
+      "name": "checks/accounting outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "aborted": 1,
+        "rejected": 1
+      }
+    },
+    {
+      "name": "checks/dialogue-before-replacement planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 4,
+        "recorded": 4
+      }
+    },
+    {
+      "name": "checks/dialogue-before-replacement complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 4
+      }
+    },
+    {
+      "name": "checks/dialogue-before-replacement outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 4
+      }
+    },
+    {
+      "name": "checks/dialogue-recovery planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 4,
+        "recorded": 4
+      }
+    },
+    {
+      "name": "checks/dialogue-recovery complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 4
+      }
+    },
+    {
+      "name": "checks/dialogue-recovery outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 4
+      }
+    },
+    {
+      "name": "controls/uniform-sticky-balanced planned/recorded",
+      "passed": true,
+      "details": {
+        "planned": 720,
+        "recorded": 720
+      }
+    },
+    {
+      "name": "controls/uniform-sticky-balanced complete requires done/chunks",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "controls/uniform-sticky-balanced outcomes exhaustive",
+      "passed": true,
+      "details": {
+        "completed": 720
+      }
+    },
+    {
+      "name": "B uniform same schedule in six runs",
+      "passed": true,
+      "details": {
+        "found": 6
+      }
+    },
+    {
+      "name": "B uniform >=120s and four clients",
+      "passed": true,
+      "details": {
+        "duration": 120.0,
+        "client_counts": [
+          180,
+          180,
+          180,
+          180
+        ]
+      }
+    },
+    {
+      "name": "B hot same schedule in six runs",
+      "passed": true,
+      "details": {
+        "found": 6
+      }
+    },
+    {
+      "name": "B hot >=120s and four clients",
+      "passed": true,
+      "details": {
+        "duration": 120.0,
+        "client_counts": [
+          576,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "name": "B hot 80% from client 0",
+      "passed": true,
+      "details": {
+        "counts": [
+          576,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "name": "A long stream crosses rollout",
+      "passed": true,
+      "details": {
+        "long_streams": 1,
+        "B_release_times": [
+          1794860975.4025984
+        ]
+      }
+    },
+    {
+      "name": "A normal rollout zero losses/5xx",
+      "passed": true,
+      "details": {
+        "completed": 100
+      }
+    },
+    {
+      "name": "Client/server completed request set matches",
+      "passed": true,
+      "details": {
+        "client_completed": 720,
+        "matched_server_terminal_count": 720,
+        "counter_endpoint_delta": 720.0
+      }
+    },
+    {
+      "name": "Required integration checks",
+      "passed": true,
+      "details": {
+        "total": 16,
+        "passed": 16
+      }
+    },
+    {
+      "name": "A observed metrics",
+      "passed": true,
+      "details": {
+        "cpu": 161,
+        "ready": 161,
+        "waiting": 161,
+        "ttfc_p95": 161
+      }
+    },
+    {
+      "name": "B observed metrics",
+      "passed": true,
+      "details": {
+        "cpu": 686,
+        "ready": 686,
+        "waiting": 686,
+        "ttfc_p95": 686
+      }
+    },
+    {
+      "name": "C observed metrics",
+      "passed": true,
+      "details": {
+        "cpu": 252,
+        "ready": 252,
+        "waiting": 252,
+        "ttfc_p95": 252
+      }
+    },
+    {
+      "name": "Four exported PNG charts",
+      "passed": true,
+      "details": {
+        "01-rollout.png": 86431,
+        "02-hot-pod.png": 101532,
+        "03-policies.png": 56934,
+        "04-hpa.png": 163862
+      }
+    },
+    {
+      "name": "CSV count matches JSONL",
+      "passed": true,
+      "details": {
+        "csv": 18273,
+        "jsonl": 18273
+      }
+    }
+  ],
+  "passed": 122,
+  "failed": []
+}

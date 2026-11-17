@@ -1,0 +1,13 @@
+{
+  "local": {
+    "app/server.py": "78a90fee6aa4bcb1be3f5152eadef5742655cbe99fe85974fd416b8dc738984e",
+    "app/release_contracts.py": "6b01a863e249b156e4562b664bef6e822b8a96b0c52deb1afabac7f8ac4c375e",
+    "tools/client.py": "9decd55f7ae37d545ff2e6fd55b384693618948c40963328607e04d3ac6b495e"
+  },
+  "running_image": {
+    "app/server.py": "78a90fee6aa4bcb1be3f5152eadef5742655cbe99fe85974fd416b8dc738984e",
+    "app/release_contracts.py": "6b01a863e249b156e4562b664bef6e822b8a96b0c52deb1afabac7f8ac4c375e",
+    "tools/client.py": "9decd55f7ae37d545ff2e6fd55b384693618948c40963328607e04d3ac6b495e"
+  },
+  "match": true
+}

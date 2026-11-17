@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 476, in <module>
+    main()
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 459, in main
+    if args.action=='setup': setup()
+                             ^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 246, in setup
+    raise RuntimeError('At least 6 GiB free (compact CPU-only stand) in the working filesystem required; also check Windows/Docker disk.')
+RuntimeError: At least 6 GiB free (compact CPU-only stand) in the working filesystem required; also check Windows/Docker disk.

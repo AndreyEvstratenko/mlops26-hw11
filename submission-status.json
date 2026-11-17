@@ -1,0 +1,13 @@
+{
+  "requests": 18273,
+  "checks": 16,
+  "passed": 16,
+  "figures": 4,
+  "reconciliation": true,
+  "complete_evidence": true,
+  "publication": {
+    "repository": "https://github.com/AndreyEvstratenko/mlops26-hw11",
+    "private": false,
+    "commit": "b641c986ce9d7c66e002d86923013b10622c4637"
+  }
+}

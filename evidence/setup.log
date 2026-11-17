@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 476, in <module>
+    command(['kind','delete','cluster','--name','mlops-andrey11'])
+^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 459, in main
+    parser.add_argument('--rps',type=float,default=6)
+                             ^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 280, in setup
+    'resources':{'requests':{'cpu':'30m','memory':'48Mi'},'limits':{'cpu':'500m','memory':'160Mi'}}}],
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 41, in k
+    return command(K + list(args), **kwargs).stdout
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-16\new-chat-2\outputs\mlops26-hw11-evstratenko\tools\lab.py", line 36, in command
+    raise RuntimeError(f'{args}:\n{p.stdout}\n{p.stderr}')
+RuntimeError: ['kubectl', '--context', 'kind-mlops-andrey11', '-n', 'lab11', 'rollout', 'status', 'deployment/grafana', '--timeout=240s']:
+Waiting for deployment "grafana" rollout to finish: 0 of 1 updated replicas are available...
+
+error: timed out waiting for the condition
+

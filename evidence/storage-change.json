@@ -1,0 +1,9 @@
+{
+  "reason": "After kind node unpacking C had approximately 1.6 GiB free; D had approximately 114 GiB free.",
+  "authorization": "User explicitly approved moving Docker Desktop data to D.",
+  "method": "Docker Desktop Settings / VM resources / Disk image location / Apply and Restart / Move",
+  "destination": "D:/DockerDesktopData/DockerDesktopWSL",
+  "verified_containers_preserved": 3,
+  "verified_images_preserved": true,
+  "free_C_bytes_after": 11006832640
+}

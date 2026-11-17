@@ -1,0 +1,14 @@
+2026-11-16T20:22:26.979439633Z INFO:     Started server process [1]
+2026-11-16T20:22:26.979475917Z INFO:     Waiting for application startup.
+2026-11-16T20:22:26.981775552Z INFO:     Application startup complete.
+2026-11-16T20:22:26.981973329Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-16T20:22:32.056594213Z {"event": "warmup_complete", "wall": 1794860552.0563755, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated", "artifact_sha256": "df38b7ce299d0a1f99bf6e36149624c63b92b9edad8942c42ca2440a2f94c196"}
+2026-11-16T20:23:40.385753588Z {"event": "received", "wall": 1794860620.3853395, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated", "request_id": "injected-abort", "client_ip": "10.244.0.12", "warm": true}
+2026-11-16T20:23:40.509275249Z {"event": "injected_stream_failure", "wall": 1794860620.5090466, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated", "request_id": "injected-abort"}
+2026-11-16T20:23:40.509305867Z {"event": "terminal", "wall": 1794860620.5091436, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated", "request_id": "injected-abort", "outcome": "aborted", "queue_seconds": 0.00020971000003555673, "duration": 0.12385659900019164, "ttfc": 0.08926297400012118, "chunks": 2, "cache_hit": false}
+2026-11-16T20:23:41.356945254Z {"event": "terminal", "wall": 1794860621.3567498, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated", "request_id": "invalid-body", "outcome": "validation", "http_status": 422}
+2026-11-16T20:24:26.058725596Z {"event": "drain_started", "wall": 1794860666.058247, "pod": "api-547bf8db46-lj8vw", "version": "A", "backend_mode": "simulated"}
+2026-11-16T20:24:34.068469184Z INFO:     Shutting down
+2026-11-16T20:24:34.169397770Z INFO:     Waiting for application shutdown.
+2026-11-16T20:24:34.169685468Z INFO:     Application shutdown complete.
+2026-11-16T20:24:34.170305392Z INFO:     Finished server process [1]

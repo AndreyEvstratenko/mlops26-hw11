@@ -1,0 +1,91 @@
+LAST SEEN   TYPE      REASON              OBJECT                             MESSAGE
+10m         Normal    Scheduled           pod/prometheus-5885576bc6-xlvl6    Successfully assigned lab11/prometheus-5885576bc6-xlvl6 to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/grafana-594ffcbd79-2p9cz       Successfully assigned lab11/grafana-594ffcbd79-2p9cz to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/client-0                       Successfully assigned lab11/client-0 to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/client-2                       Successfully assigned lab11/client-2 to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/kube-state-7854779689-c4jbz    Successfully assigned lab11/kube-state-7854779689-c4jbz to mlops-andrey11-control-plane
+76s         Normal    Scheduled           pod/api-667dbcb65c-h6mxs           Successfully assigned lab11/api-667dbcb65c-h6mxs to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/client-1                       Successfully assigned lab11/client-1 to mlops-andrey11-control-plane
+65s         Normal    Scheduled           pod/api-547bf8db46-c2l7s           Successfully assigned lab11/api-547bf8db46-c2l7s to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/client-3                       Successfully assigned lab11/client-3 to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/api-79cf664d4b-nfjkd           Successfully assigned lab11/api-79cf664d4b-nfjkd to mlops-andrey11-control-plane
+33s         Normal    Scheduled           pod/api-547bf8db46-hl2mk           Successfully assigned lab11/api-547bf8db46-hl2mk to mlops-andrey11-control-plane
+10m         Normal    Scheduled           pod/api-79cf664d4b-zr55f           Successfully assigned lab11/api-79cf664d4b-zr55f to mlops-andrey11-control-plane
+76s         Normal    Scheduled           pod/api-547bf8db46-lj8vw           Successfully assigned lab11/api-547bf8db46-lj8vw to mlops-andrey11-control-plane
+10m         Normal    SuccessfulCreate    replicaset/api-79cf664d4b          Created pod: api-79cf664d4b-nfjkd
+10m         Normal    SuccessfulCreate    replicaset/api-79cf664d4b          Created pod: api-79cf664d4b-zr55f
+10m         Normal    ScalingReplicaSet   deployment/api                     Scaled up replica set api-79cf664d4b from 0 to 2
+10m         Normal    Started             pod/api-79cf664d4b-nfjkd           Started container api
+10m         Normal    SuccessfulCreate    replicaset/prometheus-5885576bc6   Created pod: prometheus-5885576bc6-xlvl6
+10m         Normal    SuccessfulCreate    replicaset/grafana-594ffcbd79      Created pod: grafana-594ffcbd79-2p9cz
+10m         Normal    SuccessfulCreate    replicaset/kube-state-7854779689   Created pod: kube-state-7854779689-c4jbz
+10m         Normal    ScalingReplicaSet   deployment/grafana                 Scaled up replica set grafana-594ffcbd79 from 0 to 1
+10m         Normal    ScalingReplicaSet   deployment/prometheus              Scaled up replica set prometheus-5885576bc6 from 0 to 1
+10m         Normal    ScalingReplicaSet   deployment/kube-state              Scaled up replica set kube-state-7854779689 from 0 to 1
+10m         Normal    Started             pod/api-79cf664d4b-zr55f           Started container api
+10m         Normal    Pulled              pod/api-79cf664d4b-nfjkd           Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Created             pod/api-79cf664d4b-nfjkd           Created container: api
+10m         Normal    Created             pod/api-79cf664d4b-zr55f           Created container: api
+10m         Normal    Pulled              pod/api-79cf664d4b-zr55f           Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Started             pod/client-0                       Started container client
+10m         Normal    Started             pod/client-1                       Started container client
+10m         Normal    Pulled              pod/client-2                       Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Created             pod/client-2                       Created container: client
+10m         Normal    Pulled              pod/client-0                       Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Created             pod/client-1                       Created container: client
+10m         Normal    Created             pod/client-0                       Created container: client
+10m         Normal    Pulling             pod/kube-state-7854779689-c4jbz    Pulling image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.15.0"
+10m         Normal    Pulled              pod/client-1                       Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Pulling             pod/prometheus-5885576bc6-xlvl6    Pulling image "prom/prometheus:v3.2.1"
+10m         Normal    Started             pod/client-2                       Started container client
+10m         Normal    Created             pod/client-3                       Created container: client
+10m         Normal    Pulled              pod/client-3                       Container image "andrey11-api:1.0.0" already present on machine
+10m         Normal    Started             pod/client-3                       Started container client
+9m49s       Warning   Unhealthy           pod/api-79cf664d4b-zr55f           Startup probe failed: HTTP probe failed with statuscode: 503
+9m49s       Warning   Unhealthy           pod/api-79cf664d4b-nfjkd           Startup probe failed: HTTP probe failed with statuscode: 503
+6m6s        Normal    Started             pod/prometheus-5885576bc6-xlvl6    Started container prometheus
+6m6s        Normal    Created             pod/prometheus-5885576bc6-xlvl6    Created container: prometheus
+6m6s        Normal    Pulled              pod/prometheus-5885576bc6-xlvl6    Successfully pulled image "prom/prometheus:v3.2.1" in 3m29.973s (4m1.961s including waiting). Image size: 116785353 bytes.
+5m25s       Normal    Created             pod/kube-state-7854779689-c4jbz    Created container: kube-state
+5m25s       Normal    Pulled              pod/kube-state-7854779689-c4jbz    Successfully pulled image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.15.0" in 41.748s (4m43.604s including waiting). Image size: 15293353 bytes.
+5m24s       Normal    Started             pod/kube-state-7854779689-c4jbz    Started container kube-state
+5m17s       Warning   Failed              pod/grafana-594ffcbd79-2p9cz       Failed to pull image "grafana/grafana:11.6.0": failed to pull and unpack image "docker.io/grafana/grafana:11.6.0": failed to resolve reference "docker.io/grafana/grafana:11.6.0": failed to do request: Head "https://registry-1.docker.io/v2/grafana/grafana/manifests/11.6.0": dial tcp: lookup registry-1.docker.io on 192.168.65.254:53: server misbehaving
+5m17s       Warning   Failed              pod/grafana-594ffcbd79-2p9cz       Error: ErrImagePull
+5m16s       Normal    BackOff             pod/grafana-594ffcbd79-2p9cz       Back-off pulling image "grafana/grafana:11.6.0"
+5m16s       Warning   Failed              pod/grafana-594ffcbd79-2p9cz       Error: ImagePullBackOff
+5m1s        Normal    Pulling             pod/grafana-594ffcbd79-2p9cz       Pulling image "grafana/grafana:11.6.0"
+76s         Normal    SuccessfulCreate    replicaset/api-667dbcb65c          Created pod: api-667dbcb65c-h6mxs
+76s         Normal    SuccessfulDelete    replicaset/api-667dbcb65c          Deleted pod: api-667dbcb65c-h6mxs
+76s         Normal    Pulled              pod/api-547bf8db46-lj8vw           Container image "andrey11-api:1.0.0" already present on machine
+76s         Normal    Created             pod/api-547bf8db46-lj8vw           Created container: api
+76s         Normal    ScalingReplicaSet   deployment/api                     Scaled up replica set api-547bf8db46 from 0 to 1
+76s         Normal    ScalingReplicaSet   deployment/api                     Scaled down replica set api-667dbcb65c from 1 to 0
+76s         Normal    ScalingReplicaSet   deployment/api                     Scaled up replica set api-667dbcb65c from 0 to 1
+76s         Normal    Started             pod/api-547bf8db46-lj8vw           Started container api
+76s         Normal    SuccessfulCreate    replicaset/api-547bf8db46          Created pod: api-547bf8db46-lj8vw
+70s         Warning   Unhealthy           pod/api-547bf8db46-lj8vw           Startup probe failed: HTTP probe failed with statuscode: 503
+65s         Normal    SuccessfulDelete    replicaset/api-79cf664d4b          Deleted pod: api-79cf664d4b-zr55f
+65s         Normal    ScalingReplicaSet   deployment/api                     Scaled down replica set api-79cf664d4b from 2 to 1
+65s         Normal    ScalingReplicaSet   deployment/api                     Scaled up replica set api-547bf8db46 from 1 to 2
+65s         Normal    SuccessfulCreate    replicaset/api-547bf8db46          Created pod: api-547bf8db46-c2l7s
+65s         Normal    Killing             pod/api-79cf664d4b-zr55f           Stopping container api
+64s         Normal    Pulled              pod/api-547bf8db46-c2l7s           Container image "andrey11-api:1.0.0" already present on machine
+64s         Normal    Created             pod/api-547bf8db46-c2l7s           Created container: api
+64s         Normal    Started             pod/api-547bf8db46-c2l7s           Started container api
+58s         Warning   Unhealthy           pod/api-547bf8db46-c2l7s           Startup probe failed: HTTP probe failed with statuscode: 503
+57s         Warning   Unhealthy           pod/api-79cf664d4b-zr55f           Readiness probe failed: HTTP probe failed with statuscode: 503
+53s         Normal    ScalingReplicaSet   deployment/api                     Scaled down replica set api-79cf664d4b from 1 to 0
+53s         Normal    Killing             pod/api-79cf664d4b-nfjkd           Stopping container api
+53s         Normal    SuccessfulDelete    replicaset/api-79cf664d4b          Deleted pod: api-79cf664d4b-nfjkd
+46s         Warning   Unhealthy           pod/api-79cf664d4b-nfjkd           Readiness probe failed: HTTP probe failed with statuscode: 503
+45s         Warning   Unhealthy           pod/api-79cf664d4b-nfjkd           Readiness probe failed: Get "http://10.244.0.7:8080/ready": dial tcp 10.244.0.7:8080: connect: connection refused
+33s         Normal    SuccessfulCreate    replicaset/api-547bf8db46          Created pod: api-547bf8db46-hl2mk
+33s         Normal    Started             pod/api-547bf8db46-hl2mk           Started container api
+33s         Normal    Created             pod/api-547bf8db46-hl2mk           Created container: api
+33s         Normal    Pulled              pod/api-547bf8db46-hl2mk           Container image "andrey11-api:1.0.0" already present on machine
+33s         Normal    Killing             pod/api-547bf8db46-c2l7s           Stopping container api
+27s         Warning   Unhealthy           pod/api-547bf8db46-hl2mk           Startup probe failed: HTTP probe failed with statuscode: 503
+25s         Warning   Unhealthy           pod/api-547bf8db46-c2l7s           Readiness probe failed: HTTP probe failed with statuscode: 503
+5s          Normal    Created             pod/grafana-594ffcbd79-2p9cz       Created container: grafana
+5s          Normal    Pulled              pod/grafana-594ffcbd79-2p9cz       Successfully pulled image "grafana/grafana:11.6.0" in 4m56.866s (4m56.866s including waiting). Image size: 181093645 bytes.
+4s          Normal    Started             pod/grafana-594ffcbd79-2p9cz       Started container grafana

@@ -1,0 +1,190 @@
+I1116 20:12:15.520747       1 server.go:698] "Successfully retrieved node IP(s)" IPs=["172.19.0.2"]
+I1116 20:12:15.520922       1 conntrack.go:121] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_established" value=86400
+I1116 20:12:15.520979       1 conntrack.go:121] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+E1116 20:12:15.521003       1 server.go:234] "Kube-proxy configuration may be incomplete or incorrect" err="nodePortAddresses is unset; NodePort connections will be accepted on all local IPs. Consider using `--nodeport-addresses primary`"
+I1116 20:12:15.536108       1 server.go:243] "kube-proxy running in dual-stack mode" primary ipFamily="IPv4"
+I1116 20:12:15.536181       1 server_linux.go:170] "Using iptables Proxier"
+I1116 20:12:15.538467       1 proxier.go:255] "Setting route_localnet=1 to allow node-ports on localhost; to change this either disable iptables.localhostNodePorts (--iptables-localhost-nodeports) or set nodePortAddresses (--nodeport-addresses) to filter loopback addresses" ipFamily="IPv4"
+E1116 20:12:15.555918       1 proxier.go:283] "Failed to create nfacct runner, nfacct based metrics won't be available" err="nfacct sub-system not available" ipFamily="IPv4"
+E1116 20:12:15.566536       1 proxier.go:283] "Failed to create nfacct runner, nfacct based metrics won't be available" err="nfacct sub-system not available" ipFamily="IPv6"
+I1116 20:12:15.567603       1 server.go:497] "Version info" version="v1.32.2"
+I1116 20:12:15.567633       1 server.go:499] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+E1116 20:12:15.577842       1 metrics.go:340] "failed to initialize nfacct client" err="nfacct sub-system not available"
+E1116 20:12:15.583782       1 metrics.go:340] "failed to initialize nfacct client" err="nfacct sub-system not available"
+I1116 20:12:15.586003       1 config.go:329] "Starting node config controller"
+I1116 20:12:15.585996       1 config.go:105] "Starting endpoint slice config controller"
+I1116 20:12:15.586012       1 config.go:199] "Starting service config controller"
+I1116 20:12:15.587144       1 shared_informer.go:313] Waiting for caches to sync for endpoint slice config
+I1116 20:12:15.587209       1 shared_informer.go:313] Waiting for caches to sync for service config
+I1116 20:12:15.587244       1 shared_informer.go:313] Waiting for caches to sync for node config
+I1116 20:12:15.688105       1 shared_informer.go:320] Caches are synced for service config
+I1116 20:12:15.688227       1 shared_informer.go:320] Caches are synced for endpoint slice config
+I1116 20:12:15.688629       1 shared_informer.go:320] Caches are synced for node config
+E1116 20:13:54.670433       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 43: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 44: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 48: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 50: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:13:54.670556       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:04.650551       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 82: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 83: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 87: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 89: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:04.650624       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:05.650069       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 61: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 62: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 66: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 68: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:05.650107       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:27.669223       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 46: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 47: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 51: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 53: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:27.669302       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:27.838765       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 88: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 89: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 93: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 95: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:27.838810       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:29.059000       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 70: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 71: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 75: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 77: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:29.059052       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:14:59.276535       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 70: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 71: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 75: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 77: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:14:59.276638       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:15:29.425271       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 75: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 76: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 80: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 82: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:15:29.425326       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:15:59.613300       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 67: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 68: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 72: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 74: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:15:59.613345       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:16:29.831454       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 88: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 89: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 93: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 95: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:16:29.831495       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:17:00.020338       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 59: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 60: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 64: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 66: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:17:00.020417       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:17:30.188162       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 75: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 76: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 80: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 82: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:17:30.188246       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:17:36.237479       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 76: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 77: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 81: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 83: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:17:36.237571       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"
+E1116 20:18:06.454307       1 proxier.go:1564] "Failed to execute iptables-restore" err=<
+	exit status 4: Warning: Extension recent revision 0 not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	Warning: Extension recent is not supported, missing kernel module?
+	iptables-restore v1.8.9 (nf_tables): 
+	line 94: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 95: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SVC-TQIMSZSJLL4TSN7U
+	line 99: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-QBINVHCNBFUYGAH5
+	line 101: RULE_APPEND failed (No such file or directory): rule in chain KUBE-SEP-JLTBSFN3LAUCKFRM
+ > ipFamily="IPv4"
+I1116 20:18:06.454367       1 proxier.go:833] "Sync failed" ipFamily="IPv4" retryingTime="30s"

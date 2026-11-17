@@ -1,0 +1,25 @@
+Load: uniform-api-1; service=api; planned=720; epoch in ~10s
+uniform api 1 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.2557951530000082, "ttfc_p95": 1.1716638933999994, "error_fraction": 0.0, "max_dispatch_lag": 0.00167133529930652, "by_pod": {"api-58856c4798-vlv8v": 333, "api-58856c4798-xvglf": 387}}
+Load: uniform-api-2; service=api; planned=720; epoch in ~10s
+uniform api 2 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.3285249064999789, "ttfc_p95": 1.969330291899814, "error_fraction": 0.0, "max_dispatch_lag": 0.0022180744863362634, "by_pod": {"api-787df9747c-44k9x": 349, "api-787df9747c-75q5r": 371}}
+Load: uniform-api-3; service=api; planned=720; epoch in ~10s
+uniform api 3 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.4708295534996978, "ttfc_p95": 1.9031800815997484, "error_fraction": 0.0, "max_dispatch_lag": 0.0020168139958514075, "by_pod": {"api-586b7bc466-wzzfd": 374, "api-586b7bc466-98cqh": 346}}
+Load: uniform-api-sticky-1; service=api-sticky; planned=720; epoch in ~10s
+uniform api-sticky 1 {"planned": 720, "outcomes": {"completed": 626, "rejected": 94}, "completed": 626, "sent": 720, "ttfc_p50": 8.87983926049992, "ttfc_p95": 9.256106189999969, "error_fraction": 0.13055555555555554, "max_dispatch_lag": 0.001583042454058159, "by_pod": {"api-557b864454-hrpv8": 180, "api-557b864454-mjtm9": 540}}
+Load: uniform-api-sticky-2; service=api-sticky; planned=720; epoch in ~10s
+uniform api-sticky 2 {"planned": 720, "outcomes": {"completed": 624, "rejected": 96}, "completed": 624, "sent": 720, "ttfc_p50": 8.928914351999538, "ttfc_p95": 9.323006047400167, "error_fraction": 0.1333333333333333, "max_dispatch_lag": 0.002105463018779119, "by_pod": {"api-64c9db5d9c-4jgnr": 540, "api-64c9db5d9c-hr6mm": 180}}
+Load: uniform-api-sticky-3; service=api-sticky; planned=720; epoch in ~10s
+uniform api-sticky 3 {"planned": 720, "outcomes": {"completed": 623, "rejected": 97}, "completed": 623, "sent": 720, "ttfc_p50": 8.957676008999442, "ttfc_p95": 9.380293992799489, "error_fraction": 0.1347222222222222, "max_dispatch_lag": 0.0038717946199540165, "by_pod": {"api-6dd698b765-49dsp": 540, "api-6dd698b765-2s92f": 180}}
+Load: hot-api-1; service=api; planned=720; epoch in ~10s
+hot api 1 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.25970309250033097, "ttfc_p95": 0.9012451688000964, "error_fraction": 0.0, "max_dispatch_lag": 0.001316281645813433, "by_pod": {"api-655f46c44b-fp7lt": 385, "api-655f46c44b-7bftq": 335}}
+Client/Prometheus reconciliation saved.
+Load: hot-api-2; service=api; planned=720; epoch in ~10s
+hot api 2 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.2881541689998812, "ttfc_p95": 1.0821101246502618, "error_fraction": 0.0, "max_dispatch_lag": 0.0015809626465852489, "by_pod": {"api-7d9b45f6c9-xqs8v": 365, "api-7d9b45f6c9-pjb8m": 355}}
+Load: hot-api-3; service=api; planned=720; epoch in ~10s
+hot api 3 {"planned": 720, "outcomes": {"completed": 720}, "completed": 720, "sent": 720, "ttfc_p50": 0.37171158450018993, "ttfc_p95": 1.7631570250496666, "error_fraction": 0.0, "max_dispatch_lag": 0.0014929833732821862, "by_pod": {"api-785888f959-wnl89": 358, "api-785888f959-tkbkp": 362}}
+Load: hot-api-sticky-1; service=api-sticky; planned=720; epoch in ~10s
+hot api-sticky 1 {"planned": 720, "outcomes": {"completed": 487, "rejected": 233}, "completed": 487, "sent": 720, "ttfc_p50": 9.299709617999724, "ttfc_p95": 9.462057615900084, "error_fraction": 0.32361111111111107, "max_dispatch_lag": 0.0017737676498654764, "by_pod": {"api-8947f4945-dqh7z": 672, "api-8947f4945-2brkc": 48}}
+Load: hot-api-sticky-2; service=api-sticky; planned=720; epoch in ~10s
+hot api-sticky 2 {"planned": 720, "outcomes": {"completed": 440, "rejected": 280}, "completed": 440, "sent": 720, "ttfc_p50": 9.295917726500193, "ttfc_p95": 9.433359242249981, "error_fraction": 0.38888888888888884, "max_dispatch_lag": 0.0022545233159689815, "by_pod": {"api-56c8d7d87b-rxgq4": 720}}
+Load: hot-api-sticky-3; service=api-sticky; planned=720; epoch in ~10s
+hot api-sticky 3 {"planned": 720, "outcomes": {"completed": 537, "rejected": 183}, "completed": 537, "sent": 720, "ttfc_p50": 9.19972860100006, "ttfc_p95": 9.382106696600022, "error_fraction": 0.25416666666666665, "max_dispatch_lag": 0.0030960074636823265, "by_pod": {"api-77cd777fd7-xr7l9": 624, "api-77cd777fd7-27zn6": 96}}

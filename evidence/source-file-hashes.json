@@ -1,0 +1,26 @@
+[
+  {
+    "file": "service.py",
+    "sha256": "48823580d6b356248d1bb7d43b07e0aafaf8272a12de465643df366291f4cc1b"
+  },
+  {
+    "file": "backends.py",
+    "sha256": "e0ab3e8f36e2e8734b02e44d714e1d2a93eac7345058dd2d55581623aafeded2"
+  },
+  {
+    "file": "release.py",
+    "sha256": "6b01a863e249b156e4562b664bef6e822b8a96b0c52deb1afabac7f8ac4c375e"
+  },
+  {
+    "file": "README.md",
+    "sha256": "fbd0fe1c0306a41773e2f0590bcffffe1a1fe994f89b64329f67eb832d4f3a1d"
+  },
+  {
+    "file": "CONTRACTS.txt",
+    "sha256": "c1a09f181fbf9b6b38aa85731959c51384ddbdde996f2e8869a51dad3f4ac339"
+  },
+  {
+    "file": "app/release_contracts.py",
+    "sha256": "6b01a863e249b156e4562b664bef6e822b8a96b0c52deb1afabac7f8ac4c375e"
+  }
+]

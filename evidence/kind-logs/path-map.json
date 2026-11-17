@@ -1,0 +1,386 @@
+[
+  {
+    "original": "docker-info.txt",
+    "stored": "logs/33936e633cf353e0.txt",
+    "bytes": 3851,
+    "sha256": "6629b323ff534945f4b9e33352a3ffe56aa04986515cab5913f23ce76e52fc82"
+  },
+  {
+    "original": "kind-version.txt",
+    "stored": "logs/6b31a032025e260e.txt",
+    "bytes": 35,
+    "sha256": "3cfe4419d1af869d0d50cddb145bf93a4047f2ccad64453aa52ab0e78dc12e5e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/alternatives.log",
+    "stored": "logs/5af1838b65c173dd.log",
+    "bytes": 547,
+    "sha256": "935416e43629e784ae1625212f0009a433aef4d4d23dde20335bb9bfd8439041"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containerd.log",
+    "stored": "logs/4b5df942ed8ea379.log",
+    "bytes": 4037306,
+    "sha256": "80c92492466ab2f0bf859c485c8765d63815851bd7ec1d81d6855b110c080664"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/api-64978fdc54-4sbjx_lab11_api-ca79e3f2d2741a325d1d2c3c9f91eae637d72fc51b140817bcbf9d9880a6a3ae.log",
+    "stored": "logs/1c5c66afd84e0989.log",
+    "bytes": 611,
+    "sha256": "919c2d78872c3e7ccfb4855504ce4e4ca075b715c326eb6a29b977ccda234af9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/api-64978fdc54-xs5bz_lab11_api-d5b5d78d8a48bdf9d099ed0a49b2ca72b8dc468cbe5e0d757fca4c44e8fa3f91.log",
+    "stored": "logs/c06baacfe09af919.log",
+    "bytes": 611,
+    "sha256": "de06cc82b0389e98cc6aca39b46820fa943a528c05233e91df28485bd853ac42"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/client-0_lab11_client-79908dccd0eb16b049cd56ef7839f9b41ee26af57a7339920cffbbe6db367d4f.log",
+    "stored": "logs/893be0c96074d2a8.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/client-1_lab11_client-90b06a841cecd6d24b67b56a7eee5405d0a7a74fc8f7f4ce864d0ef9a1d62850.log",
+    "stored": "logs/ecc1594aa46d0583.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/client-2_lab11_client-a2fbb191388bc1955515e4c17fc87a2bd4606c59043064f183b97d746f7ebb2b.log",
+    "stored": "logs/537524ea369c1679.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/client-3_lab11_client-d7cb1fadbdc11e756fb9b8d0a879bc973048e9946f56d3763fbd67eda04e3a29.log",
+    "stored": "logs/a5cf22b646922fc5.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/coredns-668d6bf9bc-4cr54_kube-system_coredns-7abbef8ae6f5999079f0df25be3055d267d5da42ec4bb887a1f068e2c6cd4d57.log",
+    "stored": "logs/705494aee927f759.log",
+    "bytes": 7305,
+    "sha256": "811163eb7c6c55d7f080d4d5e659cd7a626d4f651fd2ea2b4f06fad02b7246df"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/coredns-668d6bf9bc-4cr54_kube-system_coredns-ecd30addad62d16ab946a8cedb3d819529d94dcc1a065607897029a4c18fb641.log",
+    "stored": "logs/e2a1223b7d03ba8f.log",
+    "bytes": 2289,
+    "sha256": "85487dd7bcd98ca79961e84e85baf036df3b99268d5a46f6bd27f5daa1ad32be"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/coredns-668d6bf9bc-tpqrb_kube-system_coredns-292c09b58aca37dc875c167fae6adb19495d6033cf372ff5776052596b99b231.log",
+    "stored": "logs/1efa6524d8d5a312.log",
+    "bytes": 6349,
+    "sha256": "852536a03f12091182fcac6acd71fc848ea7b3e74cb4bebe1913cb2853c56d84"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/coredns-668d6bf9bc-tpqrb_kube-system_coredns-ea3a466370427d76a62d81354d42a541d23fc2e207ec827c9d819789e0741f05.log",
+    "stored": "logs/c5751115614934c0.log",
+    "bytes": 1778,
+    "sha256": "754afb8c322a550408fbf70057ec0829996ad9e7062731a9320b2976d6e822c9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/etcd-mlops-andrey11-control-plane_kube-system_etcd-5a433c26376007099ac47c95dedd24433f6f587f2bea0b525f757525c062584e.log",
+    "stored": "logs/0bca7c44b870a1ed.log",
+    "bytes": 19648,
+    "sha256": "29e125e4db1324edb52018d57f883675a4699b17e2a551c16638e25cf7dee70e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/etcd-mlops-andrey11-control-plane_kube-system_etcd-7b02b4e9c4f70a3bce3ae4c099746202c23e8b59a6727b58e2ee43b384e2a881.log",
+    "stored": "logs/b78d1e879f9edb29.log",
+    "bytes": 53141,
+    "sha256": "f11209fe571c514245d7f9007140b62f828163c60f5d6fa36e444c41764f6e7b"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/grafana-594ffcbd79-2p9cz_lab11_grafana-aa2e10e327454a06495a47ee334892443dad7861a51555d4558ad42b76f61bd7.log",
+    "stored": "logs/15c321e7f2c78a30.log",
+    "bytes": 270557,
+    "sha256": "7faac5fe01d43adf0c1404727dcdc06c9f54c9f382d5330f9201740913115a17"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kindnet-ws7kk_kube-system_kindnet-cni-605965a7427966c434607ca633414c0d25d3636740ea988dee65689835d49801.log",
+    "stored": "logs/1aa74f5030ec0381.log",
+    "bytes": 15883,
+    "sha256": "55098921b235f380600b218297b6239727ca15d6178b97620151bf38f78e1919"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kindnet-ws7kk_kube-system_kindnet-cni-654d788a40c2f9771b9005dbdd2904352defeb1cd2c240b4db1c2b44e80655d5.log",
+    "stored": "logs/bb4ddb3c6b22dfcc.log",
+    "bytes": 257472,
+    "sha256": "8d88729ebbdb9aaf5cbac535535464c4440b92baaf31f8019a0083f114498046"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-apiserver-mlops-andrey11-control-plane_kube-system_kube-apiserver-54f44f7d914c50734bb2724607910c4db77187d535fe1ed2d1672ac869b3ee1d.log",
+    "stored": "logs/b7d17b4fdd4db208.log",
+    "bytes": 41260,
+    "sha256": "ce29517277721451e82519041d893727ddb7f10ff334a37dde792cc57a519e09"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-apiserver-mlops-andrey11-control-plane_kube-system_kube-apiserver-809465b76a13b71df53e2ed34d61d67659b1fc37392fbd6c194f6ec5460efa04.log",
+    "stored": "logs/44c4f3a045fbf1c3.log",
+    "bytes": 292601,
+    "sha256": "dcefc6be1746f393f6d9d0bd18da4ba9cecb569d17db1869dd3908487129c3cb"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-controller-manager-mlops-andrey11-control-plane_kube-system_kube-controller-manager-437882a977c34dc61d48be293875d14a5b43554c513e5dce9962b9c2d2f71e2c.log",
+    "stored": "logs/7bca9654cf8bad08.log",
+    "bytes": 506722,
+    "sha256": "238d57da2e34a449328919d7d0dbc3473d05ab93a11830fbfc245dc2b778483d"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-controller-manager-mlops-andrey11-control-plane_kube-system_kube-controller-manager-f299d5912c6a5f1a9893b80dbc305aa28913980819f29b07dc3832819907913f.log",
+    "stored": "logs/0f77250f2c0c62b3.log",
+    "bytes": 43658,
+    "sha256": "f72e631243e18f76dd98545057de0129c8c806ec251318f1af659b5685f7c32d"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-proxy-fvbs4_kube-system_kube-proxy-c7e1e60061b625a50c99ced3b80fe0b45bf46789ca26e13e32cc3d0a6e091632.log",
+    "stored": "logs/616d6fa005cd80b2.log",
+    "bytes": 241394,
+    "sha256": "94b71c1dfa3366766de95d138b8bd8322544b5d71609ac6e4e847a9da8fa4a06"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-scheduler-mlops-andrey11-control-plane_kube-system_kube-scheduler-5dbede7793af4bebaa9460ec01fbfa63f486bc7f63b8f85c4f19751d8cf3fcf9.log",
+    "stored": "logs/75252dc8c646e7c4.log",
+    "bytes": 2613,
+    "sha256": "8d29bcd52313c1bfdd07b1d651729a09711923df1bd7af7ff4a77943ec175b5e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-scheduler-mlops-andrey11-control-plane_kube-system_kube-scheduler-a6c9c799fa696df64cc98071e6f2834a1bdf2e23bdc7b9cfe4ef018b52e4de94.log",
+    "stored": "logs/12aa2cc50c944845.log",
+    "bytes": 25634,
+    "sha256": "770501fe4e5a60367271962857519d7981aa415224a53622b32954d8e2e8869c"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/kube-state-7854779689-c4jbz_lab11_kube-state-d20acf7798eb7ecb88a734b35957c7fca7d32f094438a739152f149f42e60f36.log",
+    "stored": "logs/aa62e53768ee5884.log",
+    "bytes": 2583,
+    "sha256": "291026a4a0d19de70f8ccb1c039d3fc3ff2db06532a7803d314bd1d963309cbd"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/local-path-provisioner-7dc846544d-jz6sb_local-path-storage_local-path-provisioner-a0d7be66efd2128cdda3c6ecd014c24337cbc785d340a420bfd4fd34197eb131.log",
+    "stored": "logs/301b71079d30ec10.log",
+    "bytes": 818,
+    "sha256": "656d32a7a276813cace0b313dbdd58ed8be84e2da4d1951e30e7149d1c6fcdc9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/local-path-provisioner-7dc846544d-jz6sb_local-path-storage_local-path-provisioner-bc53f827b0fa3f2a1a3e3dce28bb35ed02c1f3053f21784e43aa0097a1e47612.log",
+    "stored": "logs/b9f4885ae59224c2.log",
+    "bytes": 365,
+    "sha256": "d99f6dc4954c2d0cd716598fa5c0f92a8220999afc6471a9dcb1f7a236fc8770"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/metrics-server-8467fcc7b7-7f8fv_kube-system_metrics-server-3378cbea91c8e5ae3249e893f7c91b96c245d33c685e860548e523e2fcfd38df.log",
+    "stored": "logs/83c36f29bbf0641f.log",
+    "bytes": 2439,
+    "sha256": "6781a20096409d2d2e3d0ad4c911d97c752b140dd12ada2fba136dd5327e60a5"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/containers/prometheus-5885576bc6-xlvl6_lab11_prometheus-cb8ecb181683e164e330534b5e81cd088c96f65b3f7a82721d15611d97588b63.log",
+    "stored": "logs/85ce0bcf538bded0.log",
+    "bytes": 6973,
+    "sha256": "58c340f59ac3772a4d386b82d209de2c9430fb32f8472b4fa769972f58fbd91e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/images.log",
+    "stored": "logs/d52e94c9c5d5aff1.log",
+    "bytes": 2073,
+    "sha256": "d61dafebf99002007a0cd3f796c87340a94690df7d4ee642a1c1e2d7ba73dfd3"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/inspect.json",
+    "stored": "logs/2b0bb9da0315c682.json",
+    "bytes": 8126,
+    "sha256": "8aa8c08b4de9ad68ba33fc0072d07c4cc1787a7e1147d7d08e56bd661c1c5e89"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/journal.log",
+    "stored": "logs/e11fe0684a2bcfaa.log",
+    "bytes": 4516484,
+    "sha256": "c1079b1bc1f8fc1111bc81b7967f9c02249a099306d5fa7798b4af690b1d3370"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/kubelet.log",
+    "stored": "logs/56c06180cdb12312.log",
+    "bytes": 311711,
+    "sha256": "ce10f86d46957b02be6e748c69daa244429f23ef955a9858652d6628d986d696"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/kubernetes-version.txt",
+    "stored": "logs/bea86ef84856ddb1.txt",
+    "bytes": 7,
+    "sha256": "aaa4c1a3b625a903f3a095cdd12cd48afe2aa221e177be073a286d28d9176088"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_coredns-668d6bf9bc-4cr54_e69cd12c-6613-4aab-a284-fe9ebc172c60/coredns/0.log",
+    "stored": "logs/c729a7466029c2ef.log",
+    "bytes": 2289,
+    "sha256": "85487dd7bcd98ca79961e84e85baf036df3b99268d5a46f6bd27f5daa1ad32be"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_coredns-668d6bf9bc-4cr54_e69cd12c-6613-4aab-a284-fe9ebc172c60/coredns/1.log",
+    "stored": "logs/5fbb3d32ed4dffb8.log",
+    "bytes": 7305,
+    "sha256": "811163eb7c6c55d7f080d4d5e659cd7a626d4f651fd2ea2b4f06fad02b7246df"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_coredns-668d6bf9bc-tpqrb_cbab3eda-e708-4382-868e-7be8441be7a0/coredns/0.log",
+    "stored": "logs/4a9ff3dd7886c0d1.log",
+    "bytes": 1778,
+    "sha256": "754afb8c322a550408fbf70057ec0829996ad9e7062731a9320b2976d6e822c9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_coredns-668d6bf9bc-tpqrb_cbab3eda-e708-4382-868e-7be8441be7a0/coredns/1.log",
+    "stored": "logs/04016ab8332d6e3e.log",
+    "bytes": 6349,
+    "sha256": "852536a03f12091182fcac6acd71fc848ea7b3e74cb4bebe1913cb2853c56d84"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_etcd-mlops-andrey11-control-plane_a396c0948162b6d57c49d43c865878af/etcd/0.log",
+    "stored": "logs/8e6f685bd0b63341.log",
+    "bytes": 19648,
+    "sha256": "29e125e4db1324edb52018d57f883675a4699b17e2a551c16638e25cf7dee70e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_etcd-mlops-andrey11-control-plane_a396c0948162b6d57c49d43c865878af/etcd/1.log",
+    "stored": "logs/c0610797a9c8642b.log",
+    "bytes": 53141,
+    "sha256": "f11209fe571c514245d7f9007140b62f828163c60f5d6fa36e444c41764f6e7b"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kindnet-ws7kk_89677e28-f7f2-476f-9a60-42220c3604f4/kindnet-cni/0.log",
+    "stored": "logs/b79d1c58db751c4a.log",
+    "bytes": 15883,
+    "sha256": "55098921b235f380600b218297b6239727ca15d6178b97620151bf38f78e1919"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kindnet-ws7kk_89677e28-f7f2-476f-9a60-42220c3604f4/kindnet-cni/1.log",
+    "stored": "logs/2c4c6295a07f52a9.log",
+    "bytes": 257472,
+    "sha256": "8d88729ebbdb9aaf5cbac535535464c4440b92baaf31f8019a0083f114498046"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-apiserver-mlops-andrey11-control-plane_9646e79bf905c70d1838eb5079c7fea3/kube-apiserver/0.log",
+    "stored": "logs/e6f3a18fdead9144.log",
+    "bytes": 41260,
+    "sha256": "ce29517277721451e82519041d893727ddb7f10ff334a37dde792cc57a519e09"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-apiserver-mlops-andrey11-control-plane_9646e79bf905c70d1838eb5079c7fea3/kube-apiserver/1.log",
+    "stored": "logs/cc7f75fd7119ee4c.log",
+    "bytes": 292601,
+    "sha256": "dcefc6be1746f393f6d9d0bd18da4ba9cecb569d17db1869dd3908487129c3cb"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-controller-manager-mlops-andrey11-control-plane_67349ae066975b52a76f7aca8337514d/kube-controller-manager/0.log",
+    "stored": "logs/991873ccfa997e62.log",
+    "bytes": 43658,
+    "sha256": "f72e631243e18f76dd98545057de0129c8c806ec251318f1af659b5685f7c32d"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-controller-manager-mlops-andrey11-control-plane_67349ae066975b52a76f7aca8337514d/kube-controller-manager/1.log",
+    "stored": "logs/f3a594679746131a.log",
+    "bytes": 506722,
+    "sha256": "238d57da2e34a449328919d7d0dbc3473d05ab93a11830fbfc245dc2b778483d"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-proxy-fvbs4_5b60bb69-7d01-4a65-a1ae-821d21d343b3/kube-proxy/0.log",
+    "stored": "logs/b879430e9e5e684e.log",
+    "bytes": 241394,
+    "sha256": "94b71c1dfa3366766de95d138b8bd8322544b5d71609ac6e4e847a9da8fa4a06"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-scheduler-mlops-andrey11-control-plane_887d6f3ec2eb275a2257c3a8813bed31/kube-scheduler/0.log",
+    "stored": "logs/0c31ada25cbbb9b3.log",
+    "bytes": 25634,
+    "sha256": "770501fe4e5a60367271962857519d7981aa415224a53622b32954d8e2e8869c"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_kube-scheduler-mlops-andrey11-control-plane_887d6f3ec2eb275a2257c3a8813bed31/kube-scheduler/1.log",
+    "stored": "logs/b3b63f3e4493bac5.log",
+    "bytes": 2613,
+    "sha256": "8d29bcd52313c1bfdd07b1d651729a09711923df1bd7af7ff4a77943ec175b5e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/kube-system_metrics-server-8467fcc7b7-7f8fv_ded137ce-479c-4c88-b9dc-91b78dd2b465/metrics-server/0.log",
+    "stored": "logs/cc521edff01d317d.log",
+    "bytes": 2439,
+    "sha256": "6781a20096409d2d2e3d0ad4c911d97c752b140dd12ada2fba136dd5327e60a5"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_api-64978fdc54-4sbjx_8df3eda0-7c73-480f-b920-0b83863b305c/api/0.log",
+    "stored": "logs/1da891f76fa4d05b.log",
+    "bytes": 611,
+    "sha256": "919c2d78872c3e7ccfb4855504ce4e4ca075b715c326eb6a29b977ccda234af9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_api-64978fdc54-xs5bz_e1f586c1-b9ea-4771-b2ee-52b5f3d17924/api/0.log",
+    "stored": "logs/5dea7e0907223906.log",
+    "bytes": 611,
+    "sha256": "de06cc82b0389e98cc6aca39b46820fa943a528c05233e91df28485bd853ac42"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_client-0_0eae54a4-cd9d-4b6b-a88e-61b19db5bbe8/client/0.log",
+    "stored": "logs/15dfa86df528d74b.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_client-1_c169c2cf-3d2d-437e-b003-40687ce405d6/client/0.log",
+    "stored": "logs/3988b1bd8a4a883e.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_client-2_09cc3582-6ab2-4f03-82b0-95c97cc51d15/client/0.log",
+    "stored": "logs/65cda800462e8a8d.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_client-3_197436cf-a289-4307-803f-578df133e61c/client/0.log",
+    "stored": "logs/9662e168b26fa7de.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_grafana-594ffcbd79-2p9cz_f93ec3aa-20f7-4a42-9194-62ff97c730a8/grafana/0.log",
+    "stored": "logs/e54935e33f84f749.log",
+    "bytes": 270557,
+    "sha256": "7faac5fe01d43adf0c1404727dcdc06c9f54c9f382d5330f9201740913115a17"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_kube-state-7854779689-c4jbz_dee4676f-8e4a-4443-8589-9081ce5585ac/kube-state/0.log",
+    "stored": "logs/a50d6fdf3607497f.log",
+    "bytes": 2583,
+    "sha256": "291026a4a0d19de70f8ccb1c039d3fc3ff2db06532a7803d314bd1d963309cbd"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/lab11_prometheus-5885576bc6-xlvl6_dcc683d2-521e-45d8-8217-b6d51f96f2df/prometheus/0.log",
+    "stored": "logs/ac8fcce88818b17e.log",
+    "bytes": 6973,
+    "sha256": "58c340f59ac3772a4d386b82d209de2c9430fb32f8472b4fa769972f58fbd91e"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/local-path-storage_local-path-provisioner-7dc846544d-jz6sb_044d7d70-fa08-4f21-a088-02d2f30217a8/local-path-provisioner/1.log",
+    "stored": "logs/1cde8265596ec742.log",
+    "bytes": 365,
+    "sha256": "d99f6dc4954c2d0cd716598fa5c0f92a8220999afc6471a9dcb1f7a236fc8770"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/pods/local-path-storage_local-path-provisioner-7dc846544d-jz6sb_044d7d70-fa08-4f21-a088-02d2f30217a8/local-path-provisioner/2.log",
+    "stored": "logs/3546e99d0b44f6ad.log",
+    "bytes": 818,
+    "sha256": "656d32a7a276813cace0b313dbdd58ed8be84e2da4d1951e30e7149d1c6fcdc9"
+  },
+  {
+    "original": "mlops-andrey11-control-plane/serial.log",
+    "stored": "logs/308f66da93488e56.log",
+    "bytes": 28213,
+    "sha256": "195b7a063fc0b44c75fdf222542b0eab1c18375c985f42e9b8a229ea4f63bff5"
+  }
+]

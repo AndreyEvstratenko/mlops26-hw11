@@ -1,0 +1,22 @@
+[
+  {
+    "file": ".tools/kind.exe",
+    "sha256": "445ee4263d5de090d60d049453d9691a2587a17cb349aa5ab8f402a47e3c2490",
+    "bytes": 10671616
+  },
+  {
+    "file": ".tools/helm.exe",
+    "sha256": "c1e228a76a424def0ea1e0f6fbbfe36d583d8b4218d07a07ce5121908582c0ed",
+    "bytes": 59604480
+  },
+  {
+    "file": ".tools/kubectl.exe",
+    "sha256": "cf51a1c6bf3b6ba6a5b549d1debf8aa6afb00c4c5a3d5d4bb1072f54cbe4390f",
+    "bytes": 58859008
+  },
+  {
+    "file": "vendor/metrics-server.yaml",
+    "sha256": "f103539a54ed72efe66616afc74a8bfaed651703cb3918797599046af5617441",
+    "bytes": 4307
+  }
+]

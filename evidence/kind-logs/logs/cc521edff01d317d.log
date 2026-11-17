@@ -1,0 +1,14 @@
+2026-11-16T20:14:05.556496397Z stderr F I1116 20:14:05.556276       1 serving.go:374] Generated self-signed cert (/tmp/apiserver.crt, /tmp/apiserver.key)
+2026-11-16T20:14:05.767927876Z stderr F I1116 20:14:05.767714       1 handler.go:275] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+2026-11-16T20:14:05.880192206Z stderr F I1116 20:14:05.879591       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+2026-11-16T20:14:05.88021681Z stderr F I1116 20:14:05.879517       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+2026-11-16T20:14:05.880224493Z stderr F I1116 20:14:05.879778       1 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+2026-11-16T20:14:05.880227847Z stderr F I1116 20:14:05.879740       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+2026-11-16T20:14:05.880230363Z stderr F I1116 20:14:05.879594       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+2026-11-16T20:14:05.880232792Z stderr F I1116 20:14:05.879839       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+2026-11-16T20:14:05.880235427Z stderr F I1116 20:14:05.879998       1 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/tmp/apiserver.crt::/tmp/apiserver.key"
+2026-11-16T20:14:05.88023767Z stderr F I1116 20:14:05.880097       1 secure_serving.go:213] Serving securely on [::]:10250
+2026-11-16T20:14:05.880246916Z stderr F I1116 20:14:05.880154       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+2026-11-16T20:14:05.981078584Z stderr F I1116 20:14:05.980624       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+2026-11-16T20:14:05.981110635Z stderr F I1116 20:14:05.980674       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+2026-11-16T20:14:05.981112924Z stderr F I1116 20:14:05.980657       1 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController

@@ -1,0 +1,122 @@
+PASS A/after-kill planned/recorded
+PASS A/after-kill complete requires done/chunks
+PASS A/after-kill outcomes exhaustive
+PASS A/broken planned/recorded
+PASS A/broken complete requires done/chunks
+PASS A/broken outcomes exhaustive
+PASS A/fixed planned/recorded
+PASS A/fixed complete requires done/chunks
+PASS A/fixed outcomes exhaustive
+PASS A/forced-kill planned/recorded
+PASS A/forced-kill complete requires done/chunks
+PASS A/forced-kill outcomes exhaustive
+PASS A/rollback-to-A planned/recorded
+PASS A/rollback-to-A complete requires done/chunks
+PASS A/rollback-to-A outcomes exhaustive
+PASS A/rollout-A-B planned/recorded
+PASS A/rollout-A-B complete requires done/chunks
+PASS A/rollout-A-B outcomes exhaustive
+PASS B/hot-api-1 planned/recorded
+PASS B/hot-api-1 complete requires done/chunks
+PASS B/hot-api-1 four observed source IPs
+PASS B/hot-api-1 generator kept all requests
+PASS B/hot-api-1 outcomes exhaustive
+PASS B/hot-api-2 planned/recorded
+PASS B/hot-api-2 complete requires done/chunks
+PASS B/hot-api-2 four observed source IPs
+PASS B/hot-api-2 generator kept all requests
+PASS B/hot-api-2 outcomes exhaustive
+PASS B/hot-api-3 planned/recorded
+PASS B/hot-api-3 complete requires done/chunks
+PASS B/hot-api-3 four observed source IPs
+PASS B/hot-api-3 generator kept all requests
+PASS B/hot-api-3 outcomes exhaustive
+PASS B/hot-api-sticky-1 planned/recorded
+PASS B/hot-api-sticky-1 complete requires done/chunks
+PASS B/hot-api-sticky-1 four observed source IPs
+PASS B/hot-api-sticky-1 generator kept all requests
+PASS B/hot-api-sticky-1 ClientIP mapping preserved
+PASS B/hot-api-sticky-1 outcomes exhaustive
+PASS B/hot-api-sticky-2 planned/recorded
+PASS B/hot-api-sticky-2 complete requires done/chunks
+PASS B/hot-api-sticky-2 four observed source IPs
+PASS B/hot-api-sticky-2 generator kept all requests
+PASS B/hot-api-sticky-2 ClientIP mapping preserved
+PASS B/hot-api-sticky-2 outcomes exhaustive
+PASS B/hot-api-sticky-3 planned/recorded
+PASS B/hot-api-sticky-3 complete requires done/chunks
+PASS B/hot-api-sticky-3 four observed source IPs
+PASS B/hot-api-sticky-3 generator kept all requests
+PASS B/hot-api-sticky-3 ClientIP mapping preserved
+PASS B/hot-api-sticky-3 outcomes exhaustive
+PASS B/uniform-api-1 planned/recorded
+PASS B/uniform-api-1 complete requires done/chunks
+PASS B/uniform-api-1 four observed source IPs
+PASS B/uniform-api-1 generator kept all requests
+PASS B/uniform-api-1 outcomes exhaustive
+PASS B/uniform-api-2 planned/recorded
+PASS B/uniform-api-2 complete requires done/chunks
+PASS B/uniform-api-2 four observed source IPs
+PASS B/uniform-api-2 generator kept all requests
+PASS B/uniform-api-2 outcomes exhaustive
+PASS B/uniform-api-3 planned/recorded
+PASS B/uniform-api-3 complete requires done/chunks
+PASS B/uniform-api-3 four observed source IPs
+PASS B/uniform-api-3 generator kept all requests
+PASS B/uniform-api-3 outcomes exhaustive
+PASS B/uniform-api-sticky-1 planned/recorded
+PASS B/uniform-api-sticky-1 complete requires done/chunks
+PASS B/uniform-api-sticky-1 four observed source IPs
+PASS B/uniform-api-sticky-1 generator kept all requests
+PASS B/uniform-api-sticky-1 ClientIP mapping preserved
+PASS B/uniform-api-sticky-1 outcomes exhaustive
+PASS B/uniform-api-sticky-2 planned/recorded
+PASS B/uniform-api-sticky-2 complete requires done/chunks
+PASS B/uniform-api-sticky-2 four observed source IPs
+PASS B/uniform-api-sticky-2 generator kept all requests
+PASS B/uniform-api-sticky-2 ClientIP mapping preserved
+PASS B/uniform-api-sticky-2 outcomes exhaustive
+PASS B/uniform-api-sticky-3 planned/recorded
+PASS B/uniform-api-sticky-3 complete requires done/chunks
+PASS B/uniform-api-sticky-3 four observed source IPs
+PASS B/uniform-api-sticky-3 generator kept all requests
+PASS B/uniform-api-sticky-3 ClientIP mapping preserved
+PASS B/uniform-api-sticky-3 outcomes exhaustive
+PASS C/alert-recovery planned/recorded
+PASS C/alert-recovery complete requires done/chunks
+PASS C/alert-recovery outcomes exhaustive
+PASS C/alert-stimulus planned/recorded
+PASS C/alert-stimulus complete requires done/chunks
+PASS C/alert-stimulus outcomes exhaustive
+PASS C/scale-out planned/recorded
+PASS C/scale-out complete requires done/chunks
+PASS C/scale-out outcomes exhaustive
+PASS C/sticky-hot-after-scale planned/recorded
+PASS C/sticky-hot-after-scale complete requires done/chunks
+PASS C/sticky-hot-after-scale outcomes exhaustive
+PASS checks/accounting planned/recorded
+PASS checks/accounting complete requires done/chunks
+PASS checks/accounting outcomes exhaustive
+PASS checks/dialogue-before-replacement planned/recorded
+PASS checks/dialogue-before-replacement complete requires done/chunks
+PASS checks/dialogue-before-replacement outcomes exhaustive
+PASS checks/dialogue-recovery planned/recorded
+PASS checks/dialogue-recovery complete requires done/chunks
+PASS checks/dialogue-recovery outcomes exhaustive
+PASS controls/uniform-sticky-balanced planned/recorded
+PASS controls/uniform-sticky-balanced complete requires done/chunks
+PASS controls/uniform-sticky-balanced outcomes exhaustive
+PASS B uniform same schedule in six runs
+PASS B uniform >=120s and four clients
+PASS B hot same schedule in six runs
+PASS B hot >=120s and four clients
+PASS B hot 80% from client 0
+PASS A long stream crosses rollout
+PASS A normal rollout zero losses/5xx
+PASS Client/server completed request set matches
+PASS Required integration checks
+PASS A observed metrics
+PASS B observed metrics
+PASS C observed metrics
+PASS Four exported PNG charts
+PASS CSV count matches JSONL
