@@ -447,7 +447,20 @@ def inventory():
     save(EVIDENCE/'stand-size.json',dict(node_rootfs_bytes=node.get('SizeRootFs'),node_writable_bytes=node.get('SizeRw'),node_var_volume_bytes=var_bytes,host_application_image_bytes=image['Size'],logical_total_bytes=node.get('SizeRootFs',0)+var_bytes+image['Size'],limitation='Logical footprint, including image layers that may be shared. Docker VHDX includes other projects and free blocks; this is not an exact reclaimable-size estimate. Build cache and local Python/tools are separate.'))
     save(EVIDENCE/'final-inventory.json',out)
     (EVIDENCE/'helm-manifest.yaml').write_text(command(['helm','--kube-context',CTX,'get','manifest','lab11','-n',NS]).stdout,encoding='utf-8')
-    command(['kind','export','logs',str(EVIDENCE/'kind-logs'),'--name','mlops-andrey11'])
+    exported=ROOT/'.runtime/kind-logs-export'
+    command(['kind','export','logs',str(exported),'--name','mlops-andrey11'])
+    portable=EVIDENCE/'kind-logs'
+    mapping=[]
+    for file in exported.rglob('*'):
+        if not file.is_file():continue
+        relative=file.relative_to(exported).as_posix()
+        name='logs/'+hashlib.sha256(relative.encode()).hexdigest()[:16]+(file.suffix or '.txt')
+        data=file.read_bytes()
+        destination=portable/name
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        destination.write_bytes(data)
+        mapping.append(dict(original=relative,stored=name,bytes=len(data),sha256=hashlib.sha256(data).hexdigest()))
+    save(portable/'path-map.json',mapping)
 
 
 def main():
