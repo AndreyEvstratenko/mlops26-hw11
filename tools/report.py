@@ -73,6 +73,9 @@ def main():
         rows=[dict(row,run=folder.relative_to(RESULTS).as_posix()) for file in files for row in lines(file)]
         groups[folder.relative_to(RESULTS).as_posix()]=rows
         all_rows.extend(rows)
+    for row in all_rows:
+        row['first_chunk_mono'] = row['sent_mono'] + row['ttfc'] if row.get('sent_mono') is not None and row.get('ttfc') is not None else None
+        row['finished_mono'] = row['sent_mono'] + row['duration'] if row.get('sent_mono') is not None and row.get('duration') is not None else None
     fields=sorted(set(key for row in all_rows for key in row))
     if fields:
         with (RESULTS/'requests.csv').open('w',newline='',encoding='utf-8-sig') as f:

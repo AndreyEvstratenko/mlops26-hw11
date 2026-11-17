@@ -42,7 +42,7 @@ def main():
     passed=sum(c['passed'] for c in checks)
     lead=f'<div class="result"><b>Результаты собственных прогонов.</b> Запросов: {len(all_rows):,}. Kubernetes-проверки: {passed}/{len(checks)} PASS. Локальные проверки: <a href="evidence/local-tests.txt">журнал HTTP-тестов</a>.</div>'
     lead+='<p>Сеть: kind с kube-proxy nftables, IPv4 Pod/Service, ядро WSL 5.15.167.4. Режим выбран после ошибки xt_recent в iptables. IPv6-предупреждения ядра сохранены; IPv6-трафик в опытах не используется. Docker data disk перенесён на D с разрешения автора. Журналы и ограничения: evidence/network-limits.txt и storage-change.json.</p>'
-    lead+='<p>Основа — своё решение ДЗ 8–10 из <code>D:/mlops26-hw8-9-10-solution</code>. Проверка артефактов использует точную копию вашего <code>release.py</code>; сохранён вход /generate с prompt/max_new_tokens. У имитатора этот лимит означает число частей, а не токенов. Происхождение общей обвязки Helm/опытов и изменения раскрыты в <a href="PROVENANCE.md">PROVENANCE.md</a>.</p>'
+    lead+='<p>Основа — своё решение ДЗ 8–10 из <code>D:/mlops26-hw8-9-10-solution</code>. Проверка артефактов использует точную копию исходного <code>release.py</code>; сохранён вход /generate с prompt/max_new_tokens. У имитатора этот лимит означает число частей, а не токенов. Происхождение общей обвязки Helm/опытов и изменения раскрыты в <a href="PROVENANCE.md">PROVENANCE.md</a>.</p>'
     sample=groups.get('B/uniform-api-1',[])
     if sample:
         ips={}
@@ -50,6 +50,15 @@ def main():
             if row.get('client_ip'):ips.setdefault(row['client'],set()).add(row['client_ip'])
         lead+='<p>Фактические IP, наблюдаемые backend (без потери адреса клиента):</p>'+table(['Клиентский Pod','Наблюдаемый IP'],[[client,', '.join(sorted(values))] for client,values in sorted(ips.items())])
     report=report.replace('<h2>Сводка измерений</h2>',lead+'<h2>Сводка измерений</h2>')
+    durations=[]
+    for name,rows in groups.items():
+        good=[r for r in rows if r['outcome']=='completed']
+        intervals=[r['inter_chunk_mean'] for r in good if r.get('inter_chunk_mean') is not None]
+        durations.append([name,len(good),percentile([r['duration'] for r in good],.5),percentile([r['duration'] for r in good],.95),len(intervals),percentile(intervals,.5),percentile(intervals,.95)])
+    duration_section='<h2>Полное время ответа и интервалы частей</h2>'+table(['Прогон','N успешных','p50 полного, с','p95 полного, с','N со средним интервалом','p50 среднего ICL, с','p95 среднего ICL, с'],durations)
+    duration_section+='<p>ICL здесь — средний интервал между соседними частями конкретного ответа; в таблице приведены перцентили этих средних по успешным запросам, а не перцентиль всех отдельных интервалов. Для одного chunk интервал отсутствует. В CSV явно восстановлены first_chunk_mono=sent_mono+TTFC и finished_mono=sent_mono+duration; исходные JSONL сохраняются без изменения.</p>'
+    report=report.replace('<h2>Собственные проверки</h2>',duration_section+'<h2>Собственные проверки</h2>')
+
 
     # Replace the synthetic SVG layout with standard plotting and independent axes.
     pngs=build(groups,lines)
@@ -63,6 +72,8 @@ def main():
         encoded=base64.b64encode((RESULTS/'figures'/png).read_bytes()).decode()
         image=f'<figure><img src="data:image/png;base64,{encoded}" alt="{html.escape(captions[png])}"><figcaption>{html.escape(captions[png])}</figcaption></figure>'
         report=re.sub(r'<img src="results/figures/'+prefix+r'-[^" ]+\.svg"[^>]*>',lambda m:image,report)
+        old_svg=RESULTS/'figures'/png.replace('.png','.svg')
+        if old_svg.exists():old_svg.unlink()
 
     # Tables and interpretation use all repeats, with per-Pod samples retained.
     comparison=[]; summaries={}
@@ -139,6 +150,17 @@ def main():
         down=json.loads(down_path.read_text(encoding='utf-8'))
         timing.append(['Возврат к 2 Ready после окончания нагрузки, с',down.get('observed_wait')])
         timing.append(['Scale-down',down.get('result',{}).get('error','получено')])
+    cscale=groups.get('C/scale-out',[])
+    if cscale:
+        scale=summarize(cscale)
+        timing.extend([['Стресс HPA: запланировано / успешно',str(scale['planned'])+' / '+str(scale['completed'])],['Стресс HPA: доля неуспеха',scale['error_fraction']]])
+    chot=groups.get('C/sticky-hot-after-scale',[])
+    if chot:
+        cstart=json.loads((RESULTS/'C/sticky-hot-after-scale/settings.json').read_text(encoding='utf-8'))['epoch']
+        cend=max(r['finished_wall'] for r in chot)
+        active={p['metadata']['name'] for rec in lines(RESULTS/'C/cluster.jsonl') if cstart<=rec['wall']<=cend for p in rec.get('pods',{}).get('items',[]) if p['metadata'].get('labels',{}).get('app')=='api' and not p['metadata'].get('deletionTimestamp') and any(c.get('type')=='Ready' and c.get('status')=='True' for c in p['status'].get('conditions',[]))}
+        counts=Counter(r.get('pod') for r in chot)
+        timing.append(['Горячий ClientIP: получено по всем Ready Pod',dict((pod,counts[pod]) for pod in sorted(active))])
     rec_path=RESULTS/'B/hot-api-1/reconciliation.json'
     rec=json.loads(rec_path.read_text(encoding='utf-8')) if rec_path.exists() else {}
     reconcile='<h3>Сверка client / Prometheus</h3>'
@@ -149,7 +171,7 @@ def main():
         reconcile+=table(['Показатель','Значение'],[['Клиент: completed',rec['client_completed']],['Клиент: p95 TTFC, с',rec['client_p95']],['Histogram: p95, с',value('prometheus_p95')],['Histogram: наблюдений (оценка increase)',value('prometheus_observations')],['Дельта счётчика для неизменных Pod без экстраполяции',rec.get('counter_endpoint_delta')],['Совпавшие серверные terminal-записи',rec.get('matched_server_terminal_count')],['Точный серверный p95 по тем же request ID, с',rec.get('matched_server_exact_p95')],['Полное совпадение множества (Pod, request ID)',rec.get('same_completed_request_keys')]])
         reconcile+='<pre>'+html.escape(json.dumps(rec['promql'],ensure_ascii=False,indent=2))+'</pre><p>Сверка выполнена за один период и семейство completed. Сеть, интерполяция buckets и экстраполяция increase на границах scrape дают погрешность. Набор завершённых ответов дополнительно сверяется по (Pod, request ID) и terminal-записям. Дельта конечных значений счётчика допустима здесь, поскольку выбранные Pod не перезапускались в этом прогоне; она не заменяет reset-aware increase в общем случае. Равенство приближённых перцентилей не заявляется; сырые buckets сохранены в reconciliation.json.</p>'
     else:reconcile+='<p class="missing">Сверка ещё не получена.</p>'
-    report=report.replace('<h2>Методика, PromQL и ограничения</h2>',table(['Масштабирование','Результат'],timing)+reconcile+'<h2>Методика, PromQL и ограничения</h2>')
+    report=report.replace('<h2>Методика, PromQL и ограничения</h2>',table(['Масштабирование','Результат'],timing)+'<p>Вычислительный стресс HPA намеренно превышает пропускную способность при максимуме 3 реплики. Он доказывает реакцию контроллера, а не выполнение SLO без отказов. Горячий ClientIP выполняется после возврата к минимуму с продолжающим работать HPA: новая реплика не получает автоматически уже закреплённые IP. Алерт-стимул затем выполняется с фиксированными двумя репликами.</p>'+reconcile+'<h2>Методика, PromQL и ограничения</h2>')
 
     source='https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai'
     case='<p>Кейс лекции: <b>Google Cloud, Vertex AI / GKE Inference Gateway, 08:20</b>. Таймкод выбран по сообщённому автором интервалу показа слайда 08:14–08:35. В первичной публикации описана маршрутизация с совместным учётом префиксного кеша и очереди. Увеличение веса очереди позволяет обходить горячую реплику даже при cache hit. Это согласуется с выбором свободной B, когда её пересчёт 0,8 с дешевле ожидания A в 3 с. Наш CPU-стенд не воспроизводит сам GKE Inference Gateway или настоящий KV-cache; количественные показатели Google и наши TTFC напрямую не сравниваются.</p><p>Первичный источник: <a href="'+source+'">Google Cloud — How we cut Vertex AI latency by 35% with GKE Inference Gateway</a>.</p>'
